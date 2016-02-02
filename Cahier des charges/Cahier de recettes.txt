@@ -1,0 +1,28 @@
+Interface utilisateur (Application Android)
+	Téléchargement de l'application. L'application permettra d'initier plusieurs actions grâce à des boutons :
+	- Flèche gauche
+	- Flèche droite
+	- Flèche haut
+	- Flèche bas
+	- Arrêt d'urgence
+	- Interface mur / sol
+	- Interface sol / mur
+	
+Emission / Réception de données sans fil (Wifi)
+	- Nous pourrons envoyer et recevoir les actions définies précédemment. La communication s'effectuera entre un smartphone Android doté du wifi et le robot, doté d'un recepteur wifi. Nous vérifierons le fonctionnement grâce à l'allumage de plusieurs LED.
+
+Traitement données recues
+	- Vérification que chaque moteur (et servomoteur) du robot tourne dans le bon sens de rotation et à une vitesse adaptée (lorsque le robot est hors sol et que les hélices sont démontées).
+
+Déplacement sur une surface plane
+	Propulsion (Hélices + moteurs + servomoteurs + accéléromètre)
+	- Nous pourrons avancer sur une surface plane, que cela soit un sol ou un mur (dans un second temps pour le mur). Le robot sera capable d'atteindre une vitesse de 10 cm/s sur une surface horizontale. Il sera capable d'atteindre une vitesse de 1 cm/s en montée et 5 cm/s en descente sur une surface verticale.
+	
+	Orientation (Roues + servomoteurs + essieu)
+	- Nous pourrons tourner uniquement sur une surface horizontale. Le robot aura un rayon de braquage d'un mètre.
+	
+Se positionner de manière verticale (Hélices + moteurs + servomoteurs)
+	- Nous pourrons passer d'une position horizontale à une position verticale et inversement en moins de 10 secondes.
+	
+S'arréter si perte de signal
+	- En déconnectant le périphérique de contrôle, le robot s'immobilise sur une surface horizontale en moins de 10 secondes s'il était déjà au sol et 25 secondes s'il est au mur.
