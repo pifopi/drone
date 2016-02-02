@@ -1,2 +1,2 @@
-cd drone && export GIT_SSSL_NO_VERIFY=true && git pull && git add * -A && git commit -m "message" && git push origin master && git push github master
+cd drone && export GIT_SSL_NO_VERIFY=true && git pull && git add * -A && git commit -m "message" && git push origin master && git push github master
 
