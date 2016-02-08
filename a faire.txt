@@ -1,6 +1,0 @@
-modifier FAST pour word
-transposer cahier recette sous word
-
-
-créer cahier des charges word
-
