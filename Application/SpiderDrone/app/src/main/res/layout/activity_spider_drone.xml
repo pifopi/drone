@@ -68,11 +68,20 @@
         />
 
     <TextView
-        android:id="@+id/test"
+        android:id="@+id/commande"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="test"
+        android:text="commande actuelle"
         android:layout_above="@id/haut"
+        android:layout_centerHorizontal="true"
+        />
+		
+	<TextView
+        android:id="@+id/etatConnexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="etat de la connexion"
+        android:layout_above="@id/commande"
         android:layout_centerHorizontal="true"
         />
 </RelativeLayout>
