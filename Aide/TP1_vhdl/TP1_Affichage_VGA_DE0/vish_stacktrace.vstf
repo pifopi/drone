@@ -1,0 +1,23 @@
+# Current time Fri Dec 18 17:37:30 2015
+# ModelSim Stack Trace
+# Program = vish
+# Id = "6.5c"
+# Version = "2009.08"
+# Date = "Aug 27 2009"
+# Platform = win32
+
+Exception c0000005 has occurred at address 0048d87b. Traceback:
+# 0    0x0048d87b: 'Mtirpc_Init + 0x249fb'
+# 1    0x0044c1a7: '<unknown (@0x44c1a7)>'
+# 2    0x100583ea: 'TclServiceIdle + 0x4a'
+# 3    0x1004b834: 'Tcl_DoOneEvent + 0x124'
+# 4    0x10262466: 'Tk_MainLoop + 0x16'
+# 5    0x00478be4: 'Mtirpc_Init + 0xfd64'
+# 6    0x00479db9: 'Mtirpc_Init + 0x10f39'
+# 7    0x006b5cb3: '<unknown (@0x6b5cb3)>'
+# 8    0x7692ee6c: '<unknown (@0x7692ee6c)>'
+# 9    0x777f399b: '<unknown (@0x777f399b)>'
+# 10   0x777f396e: '<unknown (@0x777f396e)>'
+StackWalk failed 487
+# End of Stack Trace
+

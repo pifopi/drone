@@ -1,0 +1,8 @@
+2 : sortie alimentation 3.3V
+12 : PWM (sortie raspberry pi - entrée servomoteur)
+19 : MOSI (sortie raspberry - entrée accéléromètre)
+21 : MISO (entrée raspberry - sortie accéléromètre)
+23 : Clock SPI (sortie raspberry - entrée accéléromètre)
+29 : SS (Slave Select) connecté à l'accéléromètre, mettre à 0 (sortie raspberry - entrée accéléromètre)
+
+On ne connait pas encore les contrôleurs (pour lier la batterie aux moteurs)
