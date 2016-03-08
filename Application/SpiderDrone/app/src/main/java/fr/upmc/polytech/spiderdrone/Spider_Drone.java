@@ -29,8 +29,8 @@ public class Spider_Drone extends AppCompatActivity
     private TextView commande;
 	private TextView etatConnexion;
 	
-	private int UDP_SERVER_PORT = 1024;
-	private String UDP_SERVER_ADRESSE = "127.0.0.1";
+	private int UDP_SERVER_PORT = 2000;
+	private String UDP_SERVER_ADRESSE = "192.168.1.65";
 
     private View.OnTouchListener monListener = new View.OnTouchListener ()
     {
@@ -73,6 +73,8 @@ public class Spider_Drone extends AppCompatActivity
             {
                 commande.setText("Bouton relaché");
             }
+
+            envoiPaquet ();
             return false;
         }
     };
@@ -116,42 +118,60 @@ public class Spider_Drone extends AppCompatActivity
         {
             etatConnexion.setText ("La connexion au réseau n'est pas établie");
         }
-
-
-		/*Juste pour le test, affiche un hello world et le port utilisé pour la connexion*/
-        //A modifier pour envoyer la commande choisie de manière périodique
-		String udpMsg = "hello world from UDP client " + UDP_SERVER_PORT;
-		DatagramSocket ds = null;
-		try
-		{
-			ds = new DatagramSocket ();
-			InetAddress serverAddr = InetAddress.getByName (UDP_SERVER_ADRESSE);
-			DatagramPacket dp = new DatagramPacket (udpMsg.getBytes (), udpMsg.length (), serverAddr, UDP_SERVER_PORT);
-			ds.send (dp);
-		}
-		catch (SocketException e)
-		{
-			e.printStackTrace ();
-		}
-		catch (UnknownHostException e)
-		{
-			e.printStackTrace ();
-		}
-		catch (IOException e)
-		{
-			e.printStackTrace ();
-
-		}
-		catch (Exception e)
-		{
-			e.printStackTrace ();
-		}
-		finally
-		{
-			if (ds != null)
-			{
-				ds.close ();
-			}
-		}
 	}
+
+    private void envoiPaquet ()
+    {
+        Thread thread = new Thread (new Runnable()
+        {
+            public void run ()
+            {
+                try
+                {
+                    /*Juste pour le test, affiche un hello world et le port utilisé pour la connexion*/
+                    //A modifier pour envoyer la commande choisie de manière périodique
+                    //String udpMsg = "hello world from UDP client " + UDP_SERVER_PORT;
+                    String udpMsg = (String) commande.getText ();
+                    DatagramSocket ds = null;
+                    try
+                    {
+                        ds = new DatagramSocket ();
+                        InetAddress serverAddr = InetAddress.getByName (UDP_SERVER_ADRESSE);
+                        DatagramPacket dp = new DatagramPacket (udpMsg.getBytes (), udpMsg.length (), serverAddr, UDP_SERVER_PORT);
+                        ds.send (dp);
+                    }
+                    catch (SocketException e)
+                    {
+                        e.printStackTrace ();
+                    }
+                    catch (UnknownHostException e)
+                    {
+                        e.printStackTrace ();
+                    }
+                    catch (IOException e)
+                    {
+                        e.printStackTrace ();
+
+                    }
+                    catch (Exception e)
+                    {
+                        e.printStackTrace ();
+                    }
+                    finally
+                    {
+                        if (ds != null)
+                        {
+                            ds.close ();
+                        }
+                    }
+                }
+                catch (Exception e)
+                {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        thread.start();
+    }
 }
