@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <Button
+        android:id="@+id/stabilisation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stabilisation"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/haut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="haut"
+        android:layout_above="@id/stabilisation"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/bas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bas"
+        android:layout_below="@id/stabilisation"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/droite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="droite"
+        android:layout_toRightOf="@id/stabilisation"
+        android:layout_centerVertical="true"
+        />
+
+    <Button
+        android:id="@+id/gauche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gauche"
+        android:layout_toLeftOf="@id/stabilisation"
+        android:layout_centerVertical="true"
+        />
+
+    <Button
+        android:id="@+id/arret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="arret"
+        android:layout_toRightOf="@id/stabilisation"
+        android:layout_below="@id/stabilisation"
+        />
+
+    <Button
+        android:id="@+id/orientation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="orientation"
+        android:layout_toLeftOf="@id/stabilisation"
+        android:layout_below="@id/stabilisation"
+        />
+
+    <TextView
+        android:id="@+id/commande"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="commande actuelle"
+        android:layout_above="@id/haut"
+        android:layout_centerHorizontal="true"
+        />
+		
+	<TextView
+        android:id="@+id/etatConnexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="etat de la connexion"
+        android:layout_above="@id/commande"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/adresseIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="192.168.0.12"
+        android:layout_below="@id/bas"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
