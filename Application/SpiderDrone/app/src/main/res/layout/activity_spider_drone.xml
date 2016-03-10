@@ -75,21 +75,12 @@
         android:layout_above="@id/haut"
         android:layout_centerHorizontal="true"
         />
-		
-	<TextView
-        android:id="@+id/etatConnexion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="etat de la connexion"
-        android:layout_above="@id/commande"
-        android:layout_centerHorizontal="true"
-        />
 
     <EditText
         android:id="@+id/adresseIP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="192.168.0.12"
+        android:text="134.157.104.63"
         android:layout_below="@id/bas"
         android:layout_centerHorizontal="true"
         />
