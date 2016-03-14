@@ -16,9 +16,11 @@ public class Spider_Drone extends AppCompatActivity
 {
 	private TextView commande;
 	private EditText adresseIP;
-	private ThreadUDP threadPrincipal;
+	private ThreadUDP threadUDP;
 
 	private int UDP_SERVER_PORT = 2000;
+	private String UDP_SERVER_IP = "134.157.104.22";
+	//private String UDP_SERVER_IP = "192.168.0.10";
 
 	private View.OnTouchListener monListener = new View.OnTouchListener ()
 	{
@@ -81,6 +83,7 @@ public class Spider_Drone extends AppCompatActivity
 		Button boutonOrientation = (Button) findViewById (R.id.orientation);
 		commande = (TextView) findViewById (R.id.commande);
 		adresseIP = (EditText) findViewById (R.id.adresseIP);
+		adresseIP.setText (UDP_SERVER_IP);
 
 		/*On leur ajoute le listener privé créé au début de ce fichier*/
 		boutonStabilisation.setOnTouchListener (monListener);
@@ -95,19 +98,19 @@ public class Spider_Drone extends AppCompatActivity
 	protected void onResume ()
 	{
 		super.onResume();
-		threadPrincipal = new ThreadUDP ();
-		threadPrincipal.start ();
+		threadUDP = new ThreadUDP ();
+		threadUDP.start ();
 	}
 
 	protected void onPause ()
 	{
 		super.onPause ();
-		threadPrincipal.interrupt ();
+		threadUDP.interrupt ();
 		try
 		{
-			threadPrincipal.join ();
+			threadUDP.join ();
 		}
-			catch (InterruptedException e)
+		catch (InterruptedException e)
 		{
 			e.printStackTrace ();
 		}
@@ -123,10 +126,11 @@ public class Spider_Drone extends AppCompatActivity
 				thread.run ();
 				try
 				{
-					sleep (10);
+					Thread.sleep (10);
 				}
 				catch (InterruptedException e)
 				{
+					Thread.currentThread ().interrupt ();
 					e.printStackTrace ();
 				}
 			}
@@ -144,8 +148,8 @@ public class Spider_Drone extends AppCompatActivity
 				try
 				{
 					ds = new DatagramSocket ();
-					InetAddress serverAddr = InetAddress.getByName (adresseIP.getText ().toString ());
-					DatagramPacket dp = new DatagramPacket (udpMsg.getBytes (), udpMsg.length (), serverAddr, UDP_SERVER_PORT);
+					UDP_SERVER_IP = adresseIP.getText ().toString ();
+					DatagramPacket dp = new DatagramPacket (udpMsg.getBytes (), udpMsg.length (), InetAddress.getByName (UDP_SERVER_IP), UDP_SERVER_PORT);
 					ds.send (dp);
 				}
 				catch (Exception e)
