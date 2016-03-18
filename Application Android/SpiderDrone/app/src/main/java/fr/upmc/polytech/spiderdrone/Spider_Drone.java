@@ -15,11 +15,12 @@ import java.net.InetAddress;
 public class Spider_Drone extends AppCompatActivity
 {
 	private TextView commande;
+
 	private EditText adresseIP;
 	private ThreadUDP threadUDP;
 
 	private int UDP_SERVER_PORT = 2000;
-	private String UDP_SERVER_IP = "134.157.104.22";
+	private String UDP_SERVER_IP = "10.100.7.4";
 	//private String UDP_SERVER_IP = "192.168.0.10";
 
 	private View.OnTouchListener monListener = new View.OnTouchListener ()
@@ -66,6 +67,7 @@ public class Spider_Drone extends AppCompatActivity
 			return false;
 		}
 	};
+
 
 
 	protected void onCreate (Bundle savedInstanceState)
@@ -126,7 +128,7 @@ public class Spider_Drone extends AppCompatActivity
 				thread.run ();
 				try
 				{
-					Thread.sleep (10);
+					Thread.sleep (1);
 				}
 				catch (InterruptedException e)
 				{
