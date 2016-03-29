@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [FINAL_PROJECT_WISH.PrjPcb]
+   Generated File[PCB_FINAL_WISH.TXT]
+   Generated File[PCB_FINAL_WISH.LDP]
+   Generated File[PCB_FINAL_WISH.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 16:54:31 On 22/03/2016
