@@ -1,10 +1,12 @@
 2 : alimentation 3.3V (sortie raspberry pi - entrée accéléromètre)
-9 : (GROUND)
+9 : (GROUND) (sortie raspberry pi - entrée controleur gros moteur)
+11 : (GPIO) (sortie raspberry pi - entrée controleur gros moteur)
 12 : PWM (sortie raspberry pi - entrée servomoteur)
 19 : (SPI_MOSI) (sortie raspberry - entrée accéléromètre)
 21 : (SPI_MISO) (entrée raspberry - sortie accéléromètre)
 23 : (SPI_CLK) (sortie raspberry - entrée accéléromètre)
 29 : (GPIO05) SS (Slave Select) connecté à l'accéléromètre, mettre à 0 (sortie raspberry - entrée accéléromètre)
+32 : (GPIO12)
 37 : (GPIO26)
 39 : (GROUND)
 
