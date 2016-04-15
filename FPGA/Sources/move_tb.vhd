@@ -46,7 +46,7 @@ BEGIN
 
 	PROCESS
 	BEGIN
-		wait for 7 ns;
+		wait for 48 ns;
 		Reset <= '1';
 		QA <= '1';
 		QB <= '0';
@@ -74,7 +74,7 @@ BEGIN
 		QA <= '0';
 		QB <= '0';
 		
-		wait for 7 ns;
+		wait for 48 ns;
 		Reset <= '0';
 	END PROCESS;
 END;

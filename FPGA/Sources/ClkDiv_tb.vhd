@@ -9,22 +9,22 @@ END ClkDiv_tb;
 ARCHITECTURE comportementale OF ClkDiv_tb IS
 	COMPONENT ClkDiv
 		PORT (
-			Clk100 : IN STD_LOGIC;
 			Reset : IN STD_LOGIC;
+			Clk100 : IN STD_LOGIC;
 			Clk25 : OUT STD_LOGIC
 		);
 	END COMPONENT;
 
-	SIGNAL Clk100 : STD_LOGIC := '0';
 	SIGNAL Reset : STD_LOGIC := '1';
+	SIGNAL Clk100 : STD_LOGIC := '0';
 	SIGNAL Clk25 : STD_LOGIC := '0';
 
 	CONSTANT clk_period : time := 10 ns;
 
 BEGIN
 	Clock : ClkDiv PORT MAP (
-		Clk100 => Clk100,
 		Reset => Reset,
+		Clk100 => Clk100,
 		Clk25 => Clk25
 	);
 
@@ -38,9 +38,9 @@ BEGIN
 
 	PROCESS
 	BEGIN
-		wait for 307 ns;
+		wait for 5007 ns;
 		Reset <= '1';
-		wait for 57 ns;
+		wait for 17 ns;
 		Reset <= '0';
 	END PROCESS;
 END;

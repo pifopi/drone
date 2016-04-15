@@ -11,7 +11,7 @@ use IEEE.STD_LOGIC_unsigned.ALL;
 use work.pong_pack.all;
 
 entity top is
-    Port (	clk50 : in	STD_LOGIC;						-- Horloge 50 Mhz
+    Port (	clk100 : in	STD_LOGIC;						-- Horloge 50 Mhz
 				ouest : in	STD_LOGIC; 						-- Reset Asynchrone (Bouton Ouest)
 				nord,sud,est: in STD_LOGIC;				-- Boutons Poussoir
 				led: out STD_LOGIC_VECTOR(7 downto 0);	-- LEDs
@@ -78,9 +78,9 @@ begin
 
 -----------------------------------------------------------------------------------------
 	-- DIVISEUR D'HORLOGE
-	clkgen: entity work.ClkDiv
+    	clkgen: entity work.ClkDiv
 			port map (
-				clk50 => clk50,		-- Horloge 50 MHz
+				clk100 => clk100,		-- Horloge 50 MHz
 				reset => reset,		-- Reset Asynchrone
 				clk25 => clk25);		-- Horloge 25 MHz
 				
@@ -177,7 +177,7 @@ begin
 				other_rot_left		=> other_rot_left,	-- Commande Deplacement Gauche Codeur Autre Carte
 				other_rot_right	=> other_rot_right,	-- Commande Deplacement Droite Codeur Autre Carte
 				game_type			=> game_type,			-- Choix du Type de Jeu
-				taille				=> taille,				-- Paramètre Taille
+				taille				=> taille,				-- Paramï¿½tre Taille
 				speed 				=> speed,				-- Vitesse du Jeu
 				obstacle 			=> obstacle,			-- Presence d'un Obstacle (Pong)
 				pause					=> pause,				-- Commande Mode Pause

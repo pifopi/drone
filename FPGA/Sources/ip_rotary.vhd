@@ -7,16 +7,17 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use work.all;
 
 entity ip_rotary is
-    Port ( clk25 			: in STD_LOGIC;	-- Horloge
-           reset 			: in STD_LOGIC;	-- Reset Asynchrone
-           rot_a 			: in STD_LOGIC;	-- Switch A du Codeur
-           rot_b 			: in STD_LOGIC;	-- Switch B du Codeur
-           rot_button	: in STD_LOGIC;	-- Bouton du Codeur
+	Port ( clk25 			: in STD_LOGIC;	-- Horloge
+		   reset 			: in STD_LOGIC;	-- Reset Asynchrone
+		   rot_a 			: in STD_LOGIC;	-- Switch A du Codeur
+		   rot_b 			: in STD_LOGIC;	-- Switch B du Codeur
+		   rot_button	: in STD_LOGIC;	-- Bouton du Codeur
 			  press			: out STD_LOGIC;	-- Appui sur le Bouton
 			  rot_left 		: out STD_LOGIC;	-- Commande Rotation a Gauche
-           rot_right 	: out STD_LOGIC);	-- Commande Rotation a Droite
+		   rot_right 	: out STD_LOGIC);	-- Commande Rotation a Droite
 end ip_rotary;
 
 architecture Behavioral of ip_rotary is
@@ -39,12 +40,18 @@ begin
 			press 		=> press,		-- Appui sur le Bouton
 			qa 			=> qa,			-- Comportement du Switch A (Filtre)
 			qb 			=> qb);			-- Comportement du Switch B (Filtre)
-    
+	
 	-- Generation des Commandes de Rotation
 	---------------------------------------------------------------------
 	-- REMPLACER CES 2 INSTRUCTIONS PAR L'INSTANCIATION DU MODULE MOVE --
-	rot_left		<= '0';
-	rot_right 	<= '0';
+	IP_Move : entity work.Move PORT MAP (
+			QA => QA,
+			QB => QB,
+			Clk25 => Clk25,
+			Reset => Reset,
+			Rot_Left => Rot_Left,
+			Rot_Right => Rot_Right
+		);
 	---------------------------------------------------------------------
 
 end Behavioral;
