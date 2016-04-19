@@ -59,6 +59,15 @@
         />
 
     <Button
+        android:id="@+id/demarrage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="demarrage"
+        android:layout_toRightOf="@id/stabilisation"
+        android:layout_above="@id/stabilisation"
+        />
+
+    <Button
         android:id="@+id/orientation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

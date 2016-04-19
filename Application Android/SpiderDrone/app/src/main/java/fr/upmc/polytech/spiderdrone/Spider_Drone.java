@@ -55,6 +55,10 @@ public class Spider_Drone extends AppCompatActivity
 						commande.setText ("arret");
 						break;
 
+					case R.id.demarrage:
+						commande.setText ("demarrage");
+						break;
+
 					case R.id.orientation:
 						commande.setText ("orientation");
 						break;
@@ -82,6 +86,7 @@ public class Spider_Drone extends AppCompatActivity
 		Button boutonFlecheDroite = (Button) findViewById (R.id.droite);
 		Button boutonFlecheGauche = (Button) findViewById (R.id.gauche);
 		Button boutonArretUrgence = (Button) findViewById (R.id.arret);
+		Button boutonDemarrage = (Button) findViewById (R.id.demarrage);
 		Button boutonOrientation = (Button) findViewById (R.id.orientation);
 		commande = (TextView) findViewById (R.id.commande);
 		adresseIP = (EditText) findViewById (R.id.adresseIP);
@@ -94,6 +99,7 @@ public class Spider_Drone extends AppCompatActivity
 		boutonFlecheDroite.setOnTouchListener (monListener);
 		boutonFlecheGauche.setOnTouchListener (monListener);
 		boutonArretUrgence.setOnTouchListener (monListener);
+		boutonDemarrage.setOnTouchListener (monListener);
 		boutonOrientation.setOnTouchListener (monListener);
 	}
 
