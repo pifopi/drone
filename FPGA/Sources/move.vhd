@@ -72,16 +72,13 @@ BEGIN
 					Rot_Right <= '1';
 					etat_prochain <= un;
 
-				END CASE;
-
-
+			END CASE;
 		END IF;
 	END PROCESS;
 
 	process (clk25)
 		BEGIN
 			IF clk25' EVENT and  clk25 = '1' THEN
-
 				etat_present <= etat_prochain;
 			end if;
 	end process;
