@@ -14,5 +14,5 @@ accel = ADXL362.ADXL362()
 accel.begin_measure()
 
 while True:
-    print accel.read_xyz()
-    time.sleep(.01)
+	print accel.read_xyz()
+	time.sleep(.01)
