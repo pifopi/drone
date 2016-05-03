@@ -105,9 +105,18 @@ begin
 	-------------------------------------------------------------------
 	-- REMPLACER CES 3 INSTRUCTIONS PAR L'INSTANCIATION DU MODULE MODE --
 
-	pause <= not pause_rqt;
-	lost_game <= '0';
-	brick_win <= '0';
+	mmode: entity work.mode
+		port map(
+			pause_rqt => pause_rqt,
+			endFrame => endFrame,
+			lost => lost,
+			no_brick => no_brick,
+			Reset => Reset,
+			Clk25 => Clk25,
+			pause => pause,
+			brick_win => brick_win,
+			Game_Lost => Game_Lost
+		); 
 	-------------------------------------------------------------------
 
 
@@ -118,8 +127,13 @@ begin
 	-- SELECTION DU JEU
 	-----------------------------------------------------------------------------
 	-- REMPLACER CES 3 INSTRUCTIONS PAR L'INSTANCIATION DU MODULE GAME MANAGER --
-
-	game_type <= '0';
+	game_manager : entity work.Game_mgr
+		port map(
+			Game_Rqt => Game_Rqt,
+			Reset  => Reset,
+			Clk25  => Clk25,
+			Game_Type => Game_Type
+		); 
 	------------------------------------------------------------------------------
 
 

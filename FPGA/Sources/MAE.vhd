@@ -11,12 +11,13 @@ ENTITY MAE IS
 		no_brick : IN STD_LOGIC;
 		Reset : IN STD_LOGIC;
 		Clk25 : IN STD_LOGIC;
+		Timer_Lost : IN STD_LOGIC_VECTOR (5 downto 0);
 		RAZ_tempo_pause : OUT STD_LOGIC;
 		update_tempo_pause : OUT STD_LOGIC;
 		load_timer_lost : OUT STD_LOGIC;
 		update_timer_lost : OUT STD_LOGIC;
 		pause : OUT STD_LOGIC;
-		brick_won : OUT STD_LOGIC
+		brick_win : OUT STD_LOGIC
 	);
 END MAE;
 
@@ -36,7 +37,7 @@ BEGIN
 			load_timer_lost <= '0';
 			update_timer_lost <= '0';
 			pause <= '1';
-			brick_won <= '0';
+			brick_win <= '0';
 		ELSE
 			CASE etat_present IS
 				WHEN un =>
@@ -45,7 +46,7 @@ BEGIN
 					load_timer_lost <= '0';
 					update_timer_lost <= '0';
 					pause <= '1';
-					brick_won <= '0';
+					brick_win <= '0';
 					IF pause_rqt = '1' THEN
 						etat_prochain <= un;
 					ELSE
@@ -58,7 +59,7 @@ BEGIN
 					load_timer_lost <= '0';
 					update_timer_lost <= '0';
 					pause <= '1';
-					brick_won <= '0';
+					brick_win <= '0';
 					IF pause_rqt = '0' THEN
 						etat_prochain <= deux;
 					ELSE
@@ -71,7 +72,7 @@ BEGIN
 					load_timer_lost <= '0';
 					update_timer_lost <= '0';
 					pause <= '0';
-					brick_won <= '0';
+					brick_win <= '0';
 					IF pause_rqt = '1' THEN
 						etat_prochain <= trois;
 					ELSE
@@ -84,7 +85,7 @@ BEGIN
 					load_timer_lost <= '0';
 					update_timer_lost <= '0';
 					pause <= '0';
-					brick_won <= '0';
+					brick_win <= '0';
 					IF pause_rqt = '0' AND no_brick = '0' AND lost = '0' THEN
 						etat_prochain <= quatre;
 					ELSIF pause_rqt = '1' AND no_brick = '0' AND lost = '0' THEN
@@ -101,7 +102,7 @@ BEGIN
 					load_timer_lost <= '0';
 					update_timer_lost <= '0';
 					pause <= '0';
-					brick_won <= '1';
+					brick_win <= '1';
 					etat_prochain <= cinq;
 
 				WHEN six =>
@@ -110,19 +111,21 @@ BEGIN
 					load_timer_lost <= '1';
 					update_timer_lost <= '0';
 					pause <= '0';
-					brick_won <= '0';
+					brick_win <= '0';
 					etat_prochain <= sept;
 
 				WHEN sept =>
 					RAZ_tempo_pause <= '0';
 					update_tempo_pause <= '1';
 					load_timer_lost <= '0';
-					update_timer_lost <= '1';
+					--IF endframe'event AND endframe = '1' THEN
+						update_timer_lost <= '1';
+					--ELSIF endframe'event AND endframe = '0'THEN
+					--	update_timer_lost <= '0';
+					--END IF;
 					pause <= '1';
-					brick_won <= '0';
+					brick_win <= '0';
 					etat_prochain <= sept;
-					-- etat sept faux (on n'en sort jamai mais je ne comprends
-					-- pas le sujet qui propose une solution asynchrone)
 			END CASE;
 		END IF;
 	END PROCESS;

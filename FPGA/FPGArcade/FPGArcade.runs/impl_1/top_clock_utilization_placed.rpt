@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date         : Fri Apr 15 16:23:25 2016
-| Host         : pc4142 running 64-bit Linux Mint 17.1 Rebecca
+| Date         : Tue May  3 17:14:46 2016
+| Host         : pc4073 running 64-bit Linux Mint 17.1 Rebecca
 | Command      : report_clock_utilization -file top_clock_utilization_placed.rpt
 | Design       : top
 | Device       : xc7z020
@@ -19,8 +19,9 @@ Table of Contents
 5. Details of I/O Clocks
 6. Details of Local Clocks
 7. Clock Regions : Key Resource Utilization
-8. Net wise resources used in clock region X1Y0
-9. Net wise resources used in clock region X1Y1
+8. Net wise resources used in clock region X0Y0
+9. Net wise resources used in clock region X1Y0
+10. Net wise resources used in clock region X1Y1
 
 1. Clock Primitive Utilization
 ------------------------------
@@ -28,7 +29,7 @@ Table of Contents
 +-------+------+-----------+-----------+
 | Type  | Used | Available | Num Fixed |
 +-------+------+-----------+-----------+
-| BUFG  |    2 |        32 |         0 |
+| BUFG  |    3 |        32 |         0 |
 | BUFH  |    0 |        72 |         0 |
 | BUFIO |    0 |        16 |         0 |
 | MMCM  |    0 |         4 |         0 |
@@ -46,8 +47,9 @@ Table of Contents
 +-------+-----------------------+------------------+------+-------+-------+---------------+-----------+
 | Index | BUFG Cell             | Net Name         | BELs | Sites | Fixed | MaxDelay (ns) | Skew (ns) |
 +-------+-----------------------+------------------+------+-------+-------+---------------+-----------+
-|     1 | clk100_IBUF_BUFG_inst | clk100_IBUF_BUFG |    5 |     1 |    no |         1.813 |     0.113 |
-|     2 | clk25_BUFG_inst       | clk25_BUFG       |  150 |    73 |    no |         2.021 |     0.312 |
+|     1 | clk100_IBUF_BUFG_inst | clk100_IBUF_BUFG |    5 |     1 |    no |         1.783 |     0.106 |
+|     2 | RX_CLK_BUFG_inst      | RX_CLK_BUFG      |   34 |    11 |    no |         2.018 |     0.156 |
+|     3 | clk25_BUFG_inst       | clk25_BUFG       |  198 |    92 |    no |         2.037 |     0.371 |
 +-------+-----------------------+------------------+------+-------+-------+---------------+-----------+
 
 
@@ -63,14 +65,14 @@ Table of Contents
 6. Details of Local Clocks
 --------------------------
 
-+-------+--------------------------------+--------------------+--------------+-------+---------------+-----------+
-|       |                                |                    |   Num Loads  |       |               |           |
-+-------+--------------------------------+--------------------+------+-------+-------+---------------+-----------+
-| Index | Local Clk Src                  | Net Name           | BELs | Sites | Fixed | MaxDelay (ns) | Skew (ns) |
-+-------+--------------------------------+--------------------+------+-------+-------+---------------+-----------+
-|     1 | RS232/RS232/RX_CLK_reg         | RS232/RS232/RX_CLK |    7 |     2 |    no |         0.647 |     0.313 |
-|     2 | RS232/RS232/TX_BIT_TIME_reg[3] | RS232/RS232/TX_CLK |   17 |     7 |    no |         1.258 |     0.561 |
-+-------+--------------------------------+--------------------+------+-------+-------+---------------+-----------+
++-------+----------------------------------------------------------------+--------------------------------------------------------------------+--------------+-------+---------------+-----------+
+|       |                                                                |                                                                    |   Num Loads  |       |               |           |
++-------+----------------------------------------------------------------+--------------------------------------------------------------------+------+-------+-------+---------------+-----------+
+| Index | Local Clk Src                                                  | Net Name                                                           | BELs | Sites | Fixed | MaxDelay (ns) | Skew (ns) |
++-------+----------------------------------------------------------------+--------------------------------------------------------------------+------+-------+-------+---------------+-----------+
+|     1 | game_ctrl/mmode/MAETAT/FSM_sequential_etat_prochain_reg[2]_i_2 | game_ctrl/mmode/MAETAT/n_0_FSM_sequential_etat_prochain_reg[2]_i_2 |    3 |     1 |    no |         0.832 |     0.059 |
+|     2 | RS232/RS232/TX_BIT_TIME_reg[3]                                 | RS232/RS232/TX_CLK                                                 |   17 |     5 |    no |         0.983 |     0.286 |
++-------+----------------------------------------------------------------+--------------------------------------------------------------------+------+-------+-------+---------------+-----------+
 
 
 7. Clock Regions : Key Resource Utilization
@@ -81,17 +83,17 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 20000 |    0 |  4000 |    0 |    60 |    0 |    30 |    0 |    60 |
-| X1Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    5 | 25600 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X0Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    5 | 20000 |    0 |  4000 |    0 |    60 |    0 |    30 |    0 |    60 |
+| X1Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  107 | 25600 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
 | X0Y1              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |  9600 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  175 | 20800 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X1Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  147 | 20800 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
 | X0Y2              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |  9600 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 20800 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * RAMB36 site can be used as two RAMB18/FIFO18 sites
 
 
-8. Net wise resources used in clock region X1Y0
+8. Net wise resources used in clock region X0Y0
 -----------------------------------------------
 
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+------------------+
@@ -101,19 +103,31 @@ Table of Contents
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+------------------+
 
 
-9. Net wise resources used in clock region X1Y1
+9. Net wise resources used in clock region X1Y0
 -----------------------------------------------
 
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | Clock Net Name |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 150 |     0 |        0 | clk25_BUFG     |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 101 |     0 |        0 | clk25_BUFG     |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+
+
+10. Net wise resources used in clock region X1Y1
+------------------------------------------------
+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | Clock Net Name |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  34 |     0 |        0 | RX_CLK_BUFG    |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  97 |     0 |        0 | clk25_BUFG     |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
 
 
 
 # Location of BUFG Primitives 
-set_property LOC BUFGCTRL_X0Y1 [get_cells clk100_IBUF_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y1 [get_cells RX_CLK_BUFG_inst]
+set_property LOC BUFGCTRL_X0Y2 [get_cells clk100_IBUF_BUFG_inst]
 set_property LOC BUFGCTRL_X0Y0 [get_cells clk25_BUFG_inst]
 
 # Location of IO Clock Primitives
@@ -133,30 +147,37 @@ set_property LOC BUFGCTRL_X0Y0 [get_cells clk25_BUFG_inst]
 # Location of clock ports
 set_property LOC IOB_X0Y26 [get_ports clk100]
 
-# Clock net "RS232/RS232/RX_CLK" driven by instance "RS232/RS232/RX_CLK_reg" located at site "SLICE_X110Y72"
-#startgroup
-create_pblock CLKAG_RS232/RS232/RX_CLK
-add_cells_to_pblock [get_pblocks  CLKAG_RS232/RS232/RX_CLK] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="RS232/RS232/RX_CLK"}]]]
-resize_pblock [get_pblocks CLKAG_RS232/RS232/RX_CLK] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
-#endgroup
-
-# Clock net "RS232/RS232/TX_CLK" driven by instance "RS232/RS232/TX_BIT_TIME_reg[3]" located at site "SLICE_X110Y73"
+# Clock net "RS232/RS232/TX_CLK" driven by instance "RS232/RS232/TX_BIT_TIME_reg[3]" located at site "SLICE_X110Y54"
 #startgroup
 create_pblock CLKAG_RS232/RS232/TX_CLK
 add_cells_to_pblock [get_pblocks  CLKAG_RS232/RS232/TX_CLK] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="RS232/RS232/TX_CLK"}]]]
 resize_pblock [get_pblocks CLKAG_RS232/RS232/TX_CLK] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
 #endgroup
 
-# Clock net "clk100_IBUF_BUFG" driven by instance "clk100_IBUF_BUFG_inst" located at site "BUFGCTRL_X0Y1"
+# Clock net "RX_CLK_BUFG" driven by instance "RX_CLK_BUFG_inst" located at site "BUFGCTRL_X0Y1"
+#startgroup
+create_pblock CLKAG_RX_CLK_BUFG
+add_cells_to_pblock [get_pblocks  CLKAG_RX_CLK_BUFG] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="RX_CLK_BUFG"}]]]
+resize_pblock [get_pblocks CLKAG_RX_CLK_BUFG] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "clk100_IBUF_BUFG" driven by instance "clk100_IBUF_BUFG_inst" located at site "BUFGCTRL_X0Y2"
 #startgroup
 create_pblock CLKAG_clk100_IBUF_BUFG
 add_cells_to_pblock [get_pblocks  CLKAG_clk100_IBUF_BUFG] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="clk100_IBUF_BUFG"}]]]
-resize_pblock [get_pblocks CLKAG_clk100_IBUF_BUFG] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+resize_pblock [get_pblocks CLKAG_clk100_IBUF_BUFG] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0}
 #endgroup
 
 # Clock net "clk25_BUFG" driven by instance "clk25_BUFG_inst" located at site "BUFGCTRL_X0Y0"
 #startgroup
 create_pblock CLKAG_clk25_BUFG
 add_cells_to_pblock [get_pblocks  CLKAG_clk25_BUFG] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="clk25_BUFG"}]]]
-resize_pblock [get_pblocks CLKAG_clk25_BUFG] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+resize_pblock [get_pblocks CLKAG_clk25_BUFG] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+#endgroup
+
+# Clock net "game_ctrl/mmode/MAETAT/n_0_FSM_sequential_etat_prochain_reg[2]_i_2" driven by instance "game_ctrl/mmode/MAETAT/FSM_sequential_etat_prochain_reg[2]_i_2" located at site "SLICE_X107Y45"
+#startgroup
+create_pblock CLKAG_game_ctrl/mmode/MAETAT/n_0_FSM_sequential_etat_prochain_reg[2]_i_2
+add_cells_to_pblock [get_pblocks  CLKAG_game_ctrl/mmode/MAETAT/n_0_FSM_sequential_etat_prochain_reg[2]_i_2] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="game_ctrl/mmode/MAETAT/n_0_FSM_sequential_etat_prochain_reg[2]_i_2"}]]]
+resize_pblock [get_pblocks CLKAG_game_ctrl/mmode/MAETAT/n_0_FSM_sequential_etat_prochain_reg[2]_i_2] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
 #endgroup

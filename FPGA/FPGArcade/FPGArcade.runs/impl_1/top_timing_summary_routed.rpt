@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date              : Fri Apr 15 16:23:51 2016
-| Host              : pc4142 running 64-bit Linux Mint 17.1 Rebecca
+| Date              : Tue May  3 17:15:03 2016
+| Host              : pc4073 running 64-bit Linux Mint 17.1 Rebecca
 | Command           : report_timing_summary -warn_on_violation -max_paths 10 -file top_timing_summary_routed.rpt -rpx top_timing_summary_routed.rpx
 | Design            : top
 | Device            : 7z020-clg484
@@ -54,11 +54,17 @@ Table of Contents
 --------------------
  There are 5 register/latch pins with no clock driven by root clock pin: clk100 (HIGH)
 
- There are 6 register/latch pins with no clock driven by root clock pin: RS232/RS232/RX_CLK_reg/C (HIGH)
+ There are 34 register/latch pins with no clock driven by root clock pin: RS232/RS232/RX_CLK_reg/C (HIGH)
 
  There are 16 register/latch pins with no clock driven by root clock pin: RS232/RS232/TX_BIT_TIME_reg[3]/C (HIGH)
 
- There are 150 register/latch pins with no clock driven by root clock pin: clkgen/Clk25_reg/C (HIGH)
+ There are 198 register/latch pins with no clock driven by root clock pin: clkgen/Clk25_reg/C (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: game_ctrl/mmode/MAETAT/FSM_sequential_etat_present_reg[0]/C (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: game_ctrl/mmode/MAETAT/FSM_sequential_etat_present_reg[1]/C (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: game_ctrl/mmode/MAETAT/FSM_sequential_etat_present_reg[2]/C (HIGH)
 
 
 2. checking constant_clock
@@ -73,14 +79,14 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 448 pins that are not constrained for maximum delay. (HIGH)
+ There are 651 pins that are not constrained for maximum delay. (HIGH)
 
  There are 6 pins that are not constrained for maximum delay due to constant clock. (MEDIUM)
 
 
 5. checking no_input_delay
 --------------------------
- There are 12 input ports with no input delay specified. (HIGH)
+ There are 13 input ports with no input delay specified. (HIGH)
 
  There are 0 input ports with no input delay but user has a false path constraint.
 

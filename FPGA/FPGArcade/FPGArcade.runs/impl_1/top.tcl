@@ -52,10 +52,10 @@ set rc [catch {
   set_param xicom.use_bs_reader 1
   debug::add_scope template.lib 1
   open_checkpoint top_routed.dcp
-  set_property webtalk.parent_dir /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/FPGArcade/FPGArcade.cache/wt [current_project]
+  set_property webtalk.parent_dir /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.cache/wt [current_project]
   write_bitstream -force top.bit 
-  if { [file exists /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/FPGArcade/FPGArcade.runs/synth_1/top.hwdef] } {
-    catch { write_sysdef -hwdef /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/FPGArcade/FPGArcade.runs/synth_1/top.hwdef -bitfile top.bit -meminfo top.mmi -file top.sysdef }
+  if { [file exists /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.runs/synth_1/top.hwdef] } {
+    catch { write_sysdef -hwdef /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.runs/synth_1/top.hwdef -bitfile top.bit -meminfo top.mmi -file top.sysdef }
   }
   close_msg_db -file write_bitstream.pb
 } RESULT]

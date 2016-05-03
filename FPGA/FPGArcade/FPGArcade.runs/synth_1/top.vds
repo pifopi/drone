@@ -2,10 +2,10 @@
 # Vivado v2014.4 (64-bit)
 # SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
 # IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
-# Start of session at: Fri Apr 15 16:22:06 2016
-# Process ID: 16160
-# Log file: /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/FPGArcade/FPGArcade.runs/synth_1/top.vds
-# Journal file: /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/FPGArcade/FPGArcade.runs/synth_1/vivado.jou
+# Start of session at: Tue May  3 17:13:56 2016
+# Process ID: 26753
+# Log file: /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.runs/synth_1/top.vds
+# Journal file: /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source top.tcl
 # set_param gui.test TreeTableDev
@@ -16,36 +16,41 @@ source top.tcl
 # create_project -in_memory -part xc7z020clg484-1
 # set_param project.compositeFile.enableAutoGeneration 0
 # set_param synth.vivado.isSynthRun true
-# set_property webtalk.parent_dir /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/FPGArcade/FPGArcade.cache/wt [current_project]
-# set_property parent.project_path /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/FPGArcade/FPGArcade.xpr [current_project]
+# set_property webtalk.parent_dir /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.cache/wt [current_project]
+# set_property parent.project_path /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.xpr [current_project]
 # set_property default_lib xil_defaultlib [current_project]
 # set_property target_language Verilog [current_project]
 # set_property board_part em.avnet.com:zed:part0:1.2 [current_project]
 # read_vhdl -library xil_defaultlib {
-#   /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/pong_package.vhd
-#   /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/move.vhd
-#   /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/brick.vhd
-#   /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/decor.vhd
-#   /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/UARTcomponent.vhd
-#   /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/display.vhd
-#   /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/pad.vhd
-#   /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/ball.vhd
-#   /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/bounce.vhd
-#   /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/move_RS232.vhd
-#   /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/rotary.vhd
-#   /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/mas_sla_mgr.vhd
-#   /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/ClkDiv.vhd
-#   /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/button_mgr.vhd
-#   /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/ip_rotary.vhd
-#   /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/ip_uart.vhd
-#   /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/game.vhd
-#   /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/VGA.vhd
-#   /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/objects.vhd
-#   /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/switch_mgr.vhd
-#   /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/top.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/MAE.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pong_package.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/Timer_Lost.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/Tempo_pause.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/mode.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/game_mgr.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/mas_sla_mgr.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/move.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/brick.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/UARTcomponent.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/display.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pad.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ball.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/bounce.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/move_RS232.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/rotary.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ClkDiv.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/button_mgr.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ip_rotary.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ip_uart.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/game.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/VGA.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/objects.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/switch_mgr.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/top.vhd
 # }
-# read_xdc /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/FPGArcade/FPGArcade.srcs/constrs_1/new/Constraint.xdc
-# set_property used_in_implementation false [get_files /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/FPGArcade/FPGArcade.srcs/constrs_1/new/Constraint.xdc]
+# read_xdc /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.srcs/constrs_1/new/Constraint.xdc
+# set_property used_in_implementation false [get_files /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.srcs/constrs_1/new/Constraint.xdc]
 # catch { write_hwdef -file top.hwdef }
 INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
 # synth_design -top top -part xc7z020clg484-1
@@ -53,53 +58,64 @@ Command: synth_design -top top -part xc7z020clg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
-INFO: [Common 17-1223] The version limit for your license is '2015.06' and will expire in -290 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Common 17-1223] The version limit for your license is '2015.06' and will expire in -308 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 887.219 ; gain = 141.734 ; free physical = 317 ; free virtual = 1861
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 888.223 ; gain = 142.734 ; free physical = 1183 ; free virtual = 4408
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/top.vhd:29]
-INFO: [Synth 8-638] synthesizing module 'ClkDiv' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/ClkDiv.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'ClkDiv' (1#1) [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/ClkDiv.vhd:14]
-INFO: [Synth 8-638] synthesizing module 'switch_mgr' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/switch_mgr.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'switch_mgr' (2#1) [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/switch_mgr.vhd:20]
-INFO: [Synth 8-638] synthesizing module 'button_mgr' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/button_mgr.vhd:22]
-INFO: [Synth 8-256] done synthesizing module 'button_mgr' (3#1) [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/button_mgr.vhd:22]
-INFO: [Synth 8-638] synthesizing module 'ip_rotary' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/ip_rotary.vhd:23]
-INFO: [Synth 8-638] synthesizing module 'rotary' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/rotary.vhd:22]
-INFO: [Synth 8-256] done synthesizing module 'rotary' (4#1) [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/rotary.vhd:22]
-INFO: [Synth 8-638] synthesizing module 'Move' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/move.vhd:17]
-INFO: [Synth 8-256] done synthesizing module 'Move' (5#1) [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/move.vhd:17]
-INFO: [Synth 8-256] done synthesizing module 'ip_rotary' (6#1) [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/ip_rotary.vhd:23]
-INFO: [Synth 8-638] synthesizing module 'ip_uart' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/ip_uart.vhd:26]
-INFO: [Synth 8-638] synthesizing module 'UARTcomponent' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/UARTcomponent.vhd:25]
-INFO: [Synth 8-256] done synthesizing module 'UARTcomponent' (7#1) [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/UARTcomponent.vhd:25]
-INFO: [Synth 8-638] synthesizing module 'move_RS232' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/move_RS232.vhd:35]
-INFO: [Synth 8-256] done synthesizing module 'move_RS232' (8#1) [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/move_RS232.vhd:35]
-INFO: [Synth 8-256] done synthesizing module 'ip_uart' (9#1) [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/ip_uart.vhd:26]
-INFO: [Synth 8-638] synthesizing module 'objects' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/objects.vhd:51]
-INFO: [Synth 8-638] synthesizing module 'decor' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/decor.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'decor' (10#1) [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/decor.vhd:40]
-INFO: [Synth 8-638] synthesizing module 'pad' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/pad.vhd:46]
-WARNING: [Synth 8-614] signal 'longueur' is read in the process but is not in the sensitivity list [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/pad.vhd:175]
-INFO: [Synth 8-256] done synthesizing module 'pad' (11#1) [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/pad.vhd:46]
-INFO: [Synth 8-638] synthesizing module 'bounce' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/bounce.vhd:59]
-INFO: [Synth 8-256] done synthesizing module 'bounce' (12#1) [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/bounce.vhd:59]
-INFO: [Synth 8-638] synthesizing module 'ball' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/ball.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'ball' (13#1) [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/ball.vhd:43]
-INFO: [Synth 8-638] synthesizing module 'brick_ctrl' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/brick.vhd:22]
-INFO: [Synth 8-256] done synthesizing module 'brick_ctrl' (14#1) [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/brick.vhd:22]
-INFO: [Synth 8-256] done synthesizing module 'objects' (15#1) [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/objects.vhd:51]
-INFO: [Synth 8-638] synthesizing module 'game' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/game.vhd:53]
-INFO: [Synth 8-638] synthesizing module 'display' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/display.vhd:30]
-INFO: [Synth 8-256] done synthesizing module 'display' (16#1) [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/display.vhd:30]
-INFO: [Synth 8-638] synthesizing module 'master_slave_mgr' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/mas_sla_mgr.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'master_slave_mgr' (17#1) [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/mas_sla_mgr.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'game' (18#1) [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/game.vhd:53]
-INFO: [Synth 8-638] synthesizing module 'VGA' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/VGA.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'VGA' (19#1) [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/VGA.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'top' (20#1) [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/top.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'top' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/top.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'ClkDiv' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ClkDiv.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'ClkDiv' (1#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ClkDiv.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'switch_mgr' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/switch_mgr.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'switch_mgr' (2#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/switch_mgr.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'button_mgr' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/button_mgr.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'button_mgr' (3#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/button_mgr.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'ip_rotary' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ip_rotary.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'rotary' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/rotary.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'rotary' (4#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/rotary.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'Move' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/move.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Move' (5#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/move.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'ip_rotary' (6#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ip_rotary.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'ip_uart' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ip_uart.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'UARTcomponent' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/UARTcomponent.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'UARTcomponent' (7#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/UARTcomponent.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'move_RS232' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/move_RS232.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'move_RS232' (8#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/move_RS232.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'ip_uart' (9#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ip_uart.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'objects' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/objects.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'decor' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'decor' (10#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'pad' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pad.vhd:46]
+WARNING: [Synth 8-614] signal 'longueur' is read in the process but is not in the sensitivity list [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pad.vhd:175]
+INFO: [Synth 8-256] done synthesizing module 'pad' (11#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pad.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'bounce' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/bounce.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'bounce' (12#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/bounce.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'ball' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ball.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'ball' (13#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ball.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'brick_ctrl' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/brick.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'brick_ctrl' (14#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/brick.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'objects' (15#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/objects.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'game' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/game.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'display' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/display.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'display' (16#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/display.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'mode' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/mode.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'Tempo_pause' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/Tempo_pause.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Tempo_pause' (17#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/Tempo_pause.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'Timer_Lost' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/Timer_Lost.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Timer_Lost' (18#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/Timer_Lost.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'MAE' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/MAE.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'MAE' (19#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/MAE.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'mode' (20#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/mode.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'game_mgr' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/game_mgr.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'game_mgr' (21#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/game_mgr.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'master_slave_mgr' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/mas_sla_mgr.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'master_slave_mgr' (22#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/mas_sla_mgr.vhd:18]
+WARNING: [Synth 8-3848] Net lost_game in module/entity game does not have driver. [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/game.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'game' (23#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/game.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'VGA' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/VGA.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (24#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/VGA.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'top' (25#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/top.vhd:29]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 928.453 ; gain = 182.969 ; free physical = 275 ; free virtual = 1825
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 928.457 ; gain = 182.969 ; free physical = 1139 ; free virtual = 4370
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -109,7 +125,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 928.453 ; gain = 182.969 ; free physical = 275 ; free virtual = 1825
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 928.457 ; gain = 182.969 ; free physical = 1139 ; free virtual = 4370
 ---------------------------------------------------------------------------------
 Loading clock regions from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
 Loading clock buffers from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
@@ -121,37 +137,37 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/FPGArcade/FPGArcade.srcs/constrs_1/new/Constraint.xdc]
-Finished Parsing XDC File [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/FPGArcade/FPGArcade.srcs/constrs_1/new/Constraint.xdc]
+Parsing XDC File [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.srcs/constrs_1/new/Constraint.xdc]
+Finished Parsing XDC File [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.srcs/constrs_1/new/Constraint.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1270.922 ; gain = 0.000 ; free physical = 119 ; free virtual = 1629
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1287.934 ; gain = 0.000 ; free physical = 927 ; free virtual = 4158
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1270.922 ; gain = 525.438 ; free physical = 118 ; free virtual = 1628
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 926 ; free virtual = 4156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1270.922 ; gain = 525.438 ; free physical = 118 ; free virtual = 1628
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 926 ; free virtual = 4156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1270.922 ; gain = 525.438 ; free physical = 118 ; free virtual = 1628
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 926 ; free virtual = 4156
 ---------------------------------------------------------------------------------
 ROM "qa" won't be mapped to Block RAM because address size (2) smaller than threshold (5) 
 ROM "qb" won't be mapped to Block RAM because address size (2) smaller than threshold (5) 
 INFO: [Synth 8-802] inferred FSM for state register 'etat_present_reg' in module 'Move'
 ROM "etat_prochain" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/pad.vhd:205]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/pad.vhd:205]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/pad.vhd:205]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pad.vhd:205]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pad.vhd:205]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pad.vhd:205]
 ROM "inc_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
 ROM "inc_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
 ROM "inc_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
@@ -160,12 +176,21 @@ ROM "inc_type" won't be mapped to Block RAM because address size (4) smaller tha
 ROM "inc_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
 ROM "inc_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
 ROM "inc_type" won't be mapped to RAM because it is too sparse.
-WARNING: [Synth 8-327] inferring latch for variable 'etat_prochain_reg' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/move.vhd:27]
-WARNING: [Synth 8-327] inferring latch for variable 'etat_prochain_reg' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/move.vhd:27]
+INFO: [Synth 8-802] inferred FSM for state register 'etat_present_reg' in module 'MAE'
+ROM "etat_prochain" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
+ROM "etat_prochain" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
+ROM "etat_prochain" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
+WARNING: [Synth 8-327] inferring latch for variable 'etat_prochain_reg' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/move.vhd:27]
+WARNING: [Synth 8-327] inferring latch for variable 'etat_prochain_reg' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/move.vhd:27]
 INFO: [Synth 8-3354] encoded FSM with state register 'etat_present_reg' using encoding 'sequential' in module 'Move'
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_etat_prochain_reg' [/nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/move.vhd:27]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_etat_prochain_reg' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/move.vhd:27]
+WARNING: [Synth 8-327] inferring latch for variable 'etat_prochain_reg' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/MAE.vhd:34]
+WARNING: [Synth 8-327] inferring latch for variable 'etat_prochain_reg' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/MAE.vhd:34]
+INFO: [Synth 8-3354] encoded FSM with state register 'etat_present_reg' using encoding 'sequential' in module 'MAE'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_etat_prochain_reg' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/MAE.vhd:34]
+WARNING: [Synth 8-3848] Net lost_game in module/entity game does not have driver. [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/game.vhd:57]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1270.922 ; gain = 525.438 ; free physical = 100 ; free virtual = 1611
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 920 ; free virtual = 4149
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -179,9 +204,10 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   3 Input     11 Bit       Adders := 1     
-	   2 Input     10 Bit       Adders := 21    
+	   2 Input     10 Bit       Adders := 22    
 	   2 Input      9 Bit       Adders := 9     
 	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 5     
 	   2 Input      3 Bit       Adders := 1     
 +---XORs : 
@@ -189,14 +215,15 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit         XORs := 1     
 +---Registers : 
 	               11 Bit    Registers := 1     
-	               10 Bit    Registers := 6     
+	               10 Bit    Registers := 7     
 	                9 Bit    Registers := 6     
 	                8 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
 	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 6     
 	                3 Bit    Registers := 1     
-	                2 Bit    Registers := 5     
-	                1 Bit    Registers := 34    
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 36    
 +---Muxes : 
 	   2 Input     11 Bit        Muxes := 2     
 	   2 Input     10 Bit        Muxes := 24    
@@ -215,13 +242,13 @@ Detailed RTL Component Info :
 	  13 Input      4 Bit        Muxes := 5     
 	  11 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 2     
-	  13 Input      3 Bit        Muxes := 1     
-	   4 Input      2 Bit        Muxes := 4     
-	   2 Input      2 Bit        Muxes := 9     
-	   2 Input      1 Bit        Muxes := 83    
+	  13 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 96    
 	   3 Input      1 Bit        Muxes := 2     
-	   7 Input      1 Bit        Muxes := 6     
-	   4 Input      1 Bit        Muxes := 11    
+	   7 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 12    
 	  19 Input      1 Bit        Muxes := 1     
 	   6 Input      1 Bit        Muxes := 1     
 	  13 Input      1 Bit        Muxes := 2     
@@ -374,6 +401,40 @@ Detailed RTL Component Info :
 +---Muxes : 
 	  20 Input      1 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 2     
+Module Tempo_pause 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module Timer_Lost 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module MAE 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   7 Input      1 Bit        Muxes := 8     
+Module mode 
+Detailed RTL Component Info : 
+Module game_mgr 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
 Module master_slave_mgr 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -406,14 +467,14 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1270.922 ; gain = 525.438 ; free physical = 100 ; free virtual = 1611
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 920 ; free virtual = 4149
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1270.922 ; gain = 525.438 ; free physical = 99 ; free virtual = 1611
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 920 ; free virtual = 4150
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1270.922 ; gain = 525.438 ; free physical = 99 ; free virtual = 1611
+Finished Parallel Reinference  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 920 ; free virtual = 4150
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -427,56 +488,15 @@ Start RAM, DSP and Shift Register Reporting
 Finished RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\RS232/RS232/TX_BUF_reg[10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\obj_ctrl/bounce_ctrl/pong_left_bounce_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\obj_ctrl/bounce_ctrl/barrier_bounce_reg )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\obj_ctrl/pad_ctrl/p_0_out_inferred__0 /\obj_ctrl/pad_ctrl/xpad_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\obj_ctrl/pad_ctrl/ypong_left_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\obj_ctrl/pad_ctrl/ypong_left_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\obj_ctrl/pad_ctrl/ypong_left_reg[2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\obj_ctrl/pad_ctrl/ypong_left_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\obj_ctrl/pad_ctrl/ypong_left_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\obj_ctrl/pad_ctrl/ypong_left_reg[5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\obj_ctrl/pad_ctrl/ypong_left_reg[6] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\obj_ctrl/pad_ctrl/ypong_left_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\obj_ctrl/pad_ctrl/ypong_left_reg[8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\obj_ctrl/pad_ctrl/ypong_right_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\obj_ctrl/pad_ctrl/ypong_right_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\obj_ctrl/pad_ctrl/ypong_right_reg[2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\obj_ctrl/pad_ctrl/ypong_right_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\obj_ctrl/pad_ctrl/ypong_right_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\obj_ctrl/pad_ctrl/ypong_right_reg[5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\obj_ctrl/pad_ctrl/ypong_right_reg[6] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\obj_ctrl/pad_ctrl/ypong_right_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\obj_ctrl/pad_ctrl/ypong_right_reg[8] )
-WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/pad_ctrl/ypong_left_reg[8] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/pad_ctrl/ypong_left_reg[7] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/pad_ctrl/ypong_left_reg[6] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/pad_ctrl/ypong_left_reg[5] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/pad_ctrl/ypong_left_reg[4] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/pad_ctrl/ypong_left_reg[3] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/pad_ctrl/ypong_left_reg[2] ) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/pad_ctrl/ypong_left_reg[1] ) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/pad_ctrl/ypong_left_reg[0] ) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/pad_ctrl/xpad_reg[0] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/pad_ctrl/ypong_right_reg[8] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/pad_ctrl/ypong_right_reg[7] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/pad_ctrl/ypong_right_reg[6] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/pad_ctrl/ypong_right_reg[5] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/pad_ctrl/ypong_right_reg[4] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/pad_ctrl/ypong_right_reg[3] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/pad_ctrl/ypong_right_reg[2] ) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/pad_ctrl/ypong_right_reg[1] ) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/pad_ctrl/ypong_right_reg[0] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/bounce_ctrl/pong_right_bounce_reg ) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/bounce_ctrl/barrier_bounce_reg ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/bounce_ctrl/pong_left_bounce_reg ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/ball_ctrl/pong_bounce_reg[1] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/ball_ctrl/pong_bounce_reg[0] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/ball_ctrl/tempo_reg[2] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/ball_ctrl/tempo_reg[1] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/ball_ctrl/tempo_reg[0] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/ball_ctrl/tempo_start_reg ) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (\obj_ctrl/ball_ctrl/barrier_bounce_ok_reg ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\buttons/appui_nord_est_reg ) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (\RS232/direction/message_TX_reg[6] ) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (\RS232/direction/message_TX_reg[5] ) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (\RS232/direction/message_TX_reg[3] ) is unused and will be removed from module top.
@@ -486,65 +506,34 @@ WARNING: [Synth 8-3332] Sequential element (\RS232/direction/data_TX_reg[5] ) is
 WARNING: [Synth 8-3332] Sequential element (\RS232/direction/data_TX_reg[3] ) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (\RS232/direction/data_TX_reg[2] ) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/TX_BUF_reg[10] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RX_BIT_TIME_reg[3] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RX_BIT_TIME_reg[2] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RX_BIT_TIME_reg[1] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RX_BIT_TIME_reg[0] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RX_BIT_NB_reg[3] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RX_BIT_NB_reg[2] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RX_BIT_NB_reg[1] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RX_BIT_NB_reg[0] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RX_EP_reg[1] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RX_EP_reg[0] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/INCOMING_reg ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RX_BUF_reg[9] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RX_BUF_reg[8] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RX_BUF_reg[7] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RX_BUF_reg[6] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RX_BUF_reg[5] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RX_BUF_reg[4] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RX_BUF_reg[3] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RX_BUF_reg[2] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RX_BUF_reg[1] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RX_BUF_reg[0] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RD_REG_reg[7] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RD_REG_reg[6] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RD_REG_reg[5] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RD_REG_reg[4] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RD_REG_reg[3] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RD_REG_reg[2] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RD_REG_reg[1] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/RS232/RD_REG_reg[0] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/direction/tempo_UART_RX_reg[8] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/direction/tempo_UART_RX_reg[7] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/direction/tempo_UART_RX_reg[6] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/direction/tempo_UART_RX_reg[5] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/direction/tempo_UART_RX_reg[4] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/direction/tempo_UART_RX_reg[3] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/direction/tempo_UART_RX_reg[2] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/direction/tempo_UART_RX_reg[1] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/direction/tempo_UART_RX_reg[0] ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/direction/start_tempo_UART_RX_reg ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/direction/RS232_left_reg ) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (\RS232/direction/RS232_right_reg ) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (\RS232/direction/RS232_press_reg ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\game_ctrl/mmode/Temporisation_pause/compteur_reg[9] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\game_ctrl/mmode/Temporisation_pause/compteur_reg[8] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\game_ctrl/mmode/Temporisation_pause/compteur_reg[7] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\game_ctrl/mmode/Temporisation_pause/compteur_reg[6] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\game_ctrl/mmode/Temporisation_pause/compteur_reg[5] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\game_ctrl/mmode/Temporisation_pause/compteur_reg[4] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\game_ctrl/mmode/Temporisation_pause/compteur_reg[3] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\game_ctrl/mmode/Temporisation_pause/compteur_reg[2] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\game_ctrl/mmode/Temporisation_pause/compteur_reg[1] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\game_ctrl/mmode/Temporisation_pause/compteur_reg[0] ) is unused and will be removed from module top.
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1270.922 ; gain = 525.438 ; free physical = 115 ; free virtual = 1595
+Finished Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 902 ; free virtual = 4132
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1270.922 ; gain = 525.438 ; free physical = 115 ; free virtual = 1595
+Finished Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 902 ; free virtual = 4132
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1270.922 ; gain = 525.438 ; free physical = 115 ; free virtual = 1595
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 902 ; free virtual = 4132
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1270.922 ; gain = 525.438 ; free physical = 115 ; free virtual = 1595
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 902 ; free virtual = 4132
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -552,10 +541,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1270.922 ; gain = 525.438 ; free physical = 105 ; free virtual = 1552
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 742 ; free virtual = 4002
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1270.922 ; gain = 525.438 ; free physical = 104 ; free virtual = 1551
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 742 ; free virtual = 4001
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -567,7 +556,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1270.922 ; gain = 525.438 ; free physical = 124 ; free virtual = 1530
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 715 ; free virtual = 3975
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -591,7 +580,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1270.922 ; gain = 525.438 ; free physical = 124 ; free virtual = 1531
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 715 ; free virtual = 3974
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -604,7 +593,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1270.922 ; gain = 525.438 ; free physical = 124 ; free virtual = 1531
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 715 ; free virtual = 3974
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -616,7 +605,7 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1270.922 ; gain = 525.438 ; free physical = 124 ; free virtual = 1531
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 715 ; free virtual = 3974
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
@@ -638,20 +627,20 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |BUFG   |     2|
-|2     |CARRY4 |    59|
-|3     |LUT1   |    60|
-|4     |LUT2   |    89|
-|5     |LUT3   |   107|
-|6     |LUT4   |   177|
-|7     |LUT5   |    95|
-|8     |LUT6   |   293|
+|1     |BUFG   |     3|
+|2     |CARRY4 |    69|
+|3     |LUT1   |    67|
+|4     |LUT2   |   112|
+|5     |LUT3   |   132|
+|6     |LUT4   |   197|
+|7     |LUT5   |   117|
+|8     |LUT6   |   367|
 |9     |MUXF7  |     4|
-|10    |FDCE   |   131|
-|11    |FDPE   |    43|
-|12    |FDRE   |     3|
-|13    |LDC    |     3|
-|14    |IBUF   |    12|
+|10    |FDCE   |   179|
+|11    |FDPE   |    59|
+|12    |FDRE   |    15|
+|13    |LDC    |     6|
+|14    |IBUF   |    13|
 |15    |OBUF   |    14|
 +------+-------+------+
 
@@ -659,45 +648,49 @@ Report Instance Areas:
 +------+------------------------+-----------------+------+
 |      |Instance                |Module           |Cells |
 +------+------------------------+-----------------+------+
-|1     |top                     |                 |  1092|
-|2     |  RS232                 |ip_uart          |   102|
-|3     |    RS232               |UARTcomponent    |    70|
-|4     |    direction           |move_RS232       |    32|
-|5     |  buttons               |button_mgr       |    60|
+|1     |top                     |                 |  1354|
+|2     |  RS232                 |ip_uart          |   181|
+|3     |    RS232               |UARTcomponent    |   125|
+|4     |    direction           |move_RS232       |    56|
+|5     |  buttons               |button_mgr       |    67|
 |6     |  clkgen                |ClkDiv           |    10|
-|7     |  codeur                |ip_rotary        |    30|
+|7     |  codeur                |ip_rotary        |    29|
 |8     |    IP_Move             |Move             |    20|
-|9     |    codeur              |rotary           |    10|
-|10    |  game_ctrl             |game             |     7|
-|11    |    master_slave_select |master_slave_mgr |     7|
-|12    |  obj_ctrl              |objects          |   605|
-|13    |    ball_ctrl           |ball             |   419|
-|14    |    bounce_ctrl         |bounce           |    44|
-|15    |    pad_ctrl            |pad              |   142|
-|16    |  vga_ctrl              |VGA              |   250|
+|9     |    codeur              |rotary           |     9|
+|10    |  game_ctrl             |game             |    53|
+|11    |    game_manager        |game_mgr         |     9|
+|12    |    master_slave_select |master_slave_mgr |    10|
+|13    |    mmode               |mode             |    34|
+|14    |      MAETAT            |MAE              |    19|
+|15    |      Timerr_Lost       |Timer_Lost       |    15|
+|16    |  obj_ctrl              |objects          |   703|
+|17    |    ball_ctrl           |ball             |   439|
+|18    |    bounce_ctrl         |bounce           |    43|
+|19    |    pad_ctrl            |pad              |   221|
+|20    |  vga_ctrl              |VGA              |   280|
 +------+------------------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1270.922 ; gain = 525.438 ; free physical = 124 ; free virtual = 1531
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 715 ; free virtual = 3974
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 84 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1270.922 ; gain = 90.234 ; free physical = 124 ; free virtual = 1530
-Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1270.922 ; gain = 525.438 ; free physical = 124 ; free virtual = 1530
+Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1287.934 ; gain = 90.234 ; free physical = 715 ; free virtual = 3974
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 715 ; free virtual = 3974
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 88 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 3 instances were transformed.
-  LDC => LDCE: 3 instances
+  A total of 6 instances were transformed.
+  LDC => LDCE: 6 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-79 Infos, 85 Warnings, 0 Critical Warnings and 0 Errors encountered.
+73 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1273.922 ; gain = 436.703 ; free physical = 120 ; free virtual = 1527
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1287.934 ; gain = 449.711 ; free physical = 713 ; free virtual = 3972
 # write_checkpoint -noxdef top.dcp
 # catch { report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb }
-report_utilization: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.20 . Memory (MB): peak = 1274.922 ; gain = 0.000 ; free physical = 116 ; free virtual = 1524
-INFO: [Common 17-206] Exiting Vivado at Fri Apr 15 16:22:48 2016...
+report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1287.934 ; gain = 0.000 ; free physical = 709 ; free virtual = 3968
+INFO: [Common 17-206] Exiting Vivado at Tue May  3 17:14:22 2016...

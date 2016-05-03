@@ -11,36 +11,41 @@ set_msg_config -id {HDL 9-1654} -limit 100000
 create_project -in_memory -part xc7z020clg484-1
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/FPGArcade/FPGArcade.cache/wt [current_project]
-set_property parent.project_path /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/FPGArcade/FPGArcade.xpr [current_project]
+set_property webtalk.parent_dir /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.cache/wt [current_project]
+set_property parent.project_path /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part em.avnet.com:zed:part0:1.2 [current_project]
 read_vhdl -library xil_defaultlib {
-  /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/pong_package.vhd
-  /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/move.vhd
-  /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/brick.vhd
-  /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/decor.vhd
-  /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/UARTcomponent.vhd
-  /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/display.vhd
-  /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/pad.vhd
-  /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/ball.vhd
-  /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/bounce.vhd
-  /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/move_RS232.vhd
-  /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/rotary.vhd
-  /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/mas_sla_mgr.vhd
-  /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/ClkDiv.vhd
-  /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/button_mgr.vhd
-  /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/ip_rotary.vhd
-  /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/ip_uart.vhd
-  /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/game.vhd
-  /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/VGA.vhd
-  /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/objects.vhd
-  /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/switch_mgr.vhd
-  /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/Sources/top.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/MAE.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pong_package.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/Timer_Lost.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/Tempo_pause.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/mode.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/game_mgr.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/mas_sla_mgr.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/move.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/brick.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/UARTcomponent.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/display.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pad.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ball.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/bounce.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/move_RS232.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/rotary.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ClkDiv.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/button_mgr.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ip_rotary.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ip_uart.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/game.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/VGA.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/objects.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/switch_mgr.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/top.vhd
 }
-read_xdc /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/FPGArcade/FPGArcade.srcs/constrs_1/new/Constraint.xdc
-set_property used_in_implementation false [get_files /nfs/home/sasl/eleves/ei-se/3410698/Bureau/drone/FPGA/FPGArcade/FPGArcade.srcs/constrs_1/new/Constraint.xdc]
+read_xdc /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.srcs/constrs_1/new/Constraint.xdc
+set_property used_in_implementation false [get_files /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.srcs/constrs_1/new/Constraint.xdc]
 
 catch { write_hwdef -file top.hwdef }
 synth_design -top top -part xc7z020clg484-1

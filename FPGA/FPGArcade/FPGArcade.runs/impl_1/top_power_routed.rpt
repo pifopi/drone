@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date             : Fri Apr 15 16:23:52 2016
-| Host             : pc4142 running 64-bit Linux Mint 17.1 Rebecca
+| Date             : Tue May  3 17:15:03 2016
+| Host             : pc4073 running 64-bit Linux Mint 17.1 Rebecca
 | Command          : 
 | Design           : top
 | Device           : xc7z020clg484-1
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 22.435 (Junction temp exceeded!) |
-| Dynamic (W)              | 21.393                           |
+| Total On-Chip Power (W)  | 23.739 (Junction temp exceeded!) |
+| Dynamic (W)              | 22.697                           |
 | Device Static (W)        | 1.042                            |
 | Effective TJA (C/W)      | 11.5                             |
 | Max Ambient (C)          | 0.0                              |
@@ -49,17 +49,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     6.362 |     1059 |       --- |             --- |
-|   LUT as Logic |     6.072 |      614 |     53200 |            1.15 |
-|   CARRY4       |     0.192 |       59 |     13300 |            0.44 |
-|   Register     |     0.088 |      180 |    106400 |            0.16 |
-|   BUFG         |     0.006 |        2 |        32 |            6.25 |
+| Slice Logic    |     7.307 |     1325 |       --- |             --- |
+|   LUT as Logic |     6.966 |      749 |     53200 |            1.40 |
+|   CARRY4       |     0.208 |       69 |     13300 |            0.51 |
+|   Register     |     0.117 |      259 |    106400 |            0.24 |
+|   BUFG         |     0.012 |        3 |        32 |            9.37 |
 |   F7/F8 Muxes  |     0.004 |        4 |     53200 |           <0.01 |
-|   Others       |     0.000 |       17 |       --- |             --- |
-| Signals        |     4.917 |      757 |       --- |             --- |
-| I/O            |    10.115 |       26 |       200 |           13.00 |
+|   Others       |     0.000 |       24 |       --- |             --- |
+| Signals        |     5.548 |      908 |       --- |             --- |
+| I/O            |     9.842 |       27 |       200 |           13.50 |
 | Static Power   |     1.042 |          |           |                 |
-| Total          |    22.435 |          |           |                 |
+| Total          |    23.739 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -69,9 +69,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |    11.625 |      11.327 |      0.299 |
-| Vccaux    |       1.800 |     0.469 |       0.369 |      0.100 |
-| Vcco33    |       3.300 |     2.850 |       2.849 |      0.001 |
+| Vccint    |       1.000 |    13.205 |      12.907 |      0.299 |
+| Vccaux    |       1.800 |     0.459 |       0.359 |      0.100 |
+| Vcco33    |       3.300 |     2.772 |       2.771 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -143,22 +143,26 @@ Table of Contents
 +-------------------------+-----------+
 | Name                    | Power (W) |
 +-------------------------+-----------+
-| top                     |    21.393 |
-|   RS232                 |     0.633 |
-|     RS232               |     0.479 |
-|     direction           |     0.154 |
-|   buttons               |     0.149 |
+| top                     |    22.697 |
+|   RS232                 |     0.773 |
+|     RS232               |     0.521 |
+|     direction           |     0.252 |
+|   buttons               |     0.200 |
 |   clkgen                |     0.012 |
-|   codeur                |     0.070 |
-|     IP_Move             |     0.043 |
-|     codeur              |     0.027 |
-|   game_ctrl             |     0.075 |
-|     master_slave_select |     0.075 |
-|   obj_ctrl              |     8.172 |
-|     ball_ctrl           |     6.593 |
-|     bounce_ctrl         |     0.287 |
-|     pad_ctrl            |     1.291 |
-|   vga_ctrl              |     2.069 |
+|   codeur                |     0.060 |
+|     IP_Move             |     0.036 |
+|     codeur              |     0.024 |
+|   game_ctrl             |     0.211 |
+|     game_manager        |     0.010 |
+|     master_slave_select |     0.093 |
+|     mmode               |     0.109 |
+|       MAETAT            |     0.015 |
+|       Timerr_Lost       |     0.094 |
+|   obj_ctrl              |     8.989 |
+|     ball_ctrl           |     6.530 |
+|     bounce_ctrl         |     0.199 |
+|     pad_ctrl            |     2.261 |
+|   vga_ctrl              |     2.443 |
 +-------------------------+-----------+
 
 
