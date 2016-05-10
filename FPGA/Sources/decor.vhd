@@ -11,7 +11,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 
 entity decor is
-    Port (	clk25: in STD_LOGIC;								-- Horloge 25 MHz
+	Port (	clk25: in STD_LOGIC;								-- Horloge 25 MHz
 				reset: in STD_LOGIC;								-- Reset Asynchrone
 				
 				-- INDICATIONS D'AFFICHAGE DES PIXELS
@@ -122,42 +122,42 @@ begin
 -------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
 
-        -- AJOUTER ICI LE CODE POUR LA GESTION DE L'OBSTACLE
-        -- notre code -- 
-        if (xpos > 316) and (xpos < 324) then
-            xbarrier <= '1';
-        else
-            xbarrier <= '0';
-        end if;
-        
-        if (xbarrier = '1')
-            and  (ypos > ybarrier) and (ypos < ybarrier + 100)
-            and (game_type = '1')
-            and (obstacle = '1')
-            then
-                barrier	<= '1';
-            else 	
-                barrier	<= '0';	
-            end if;
+		-- AJOUTER ICI LE CODE POUR LA GESTION DE L'OBSTACLE
+		-- notre code -- 
+		if (xpos > 316) and (xpos < 324) then
+			xbarrier <= '1';
+		else
+			xbarrier <= '0';
+		end if;
+		
+		if (xbarrier = '1')
+			and  (ypos > ybarrier) and (ypos < ybarrier + 100)
+			and (game_type = '1')
+			and (obstacle = '1')
+			then
+				barrier	<= '1';
+			else 	
+				barrier	<= '0';	
+			end if;
 	end process;
 
 	process (endFrame)
 	begin
 	   if (endFrame = '0' and endFrame'event) then
-            if (direction = '0') then
-                if (ybarrier = "101111100") then
-                    direction <= '1';
-                else
-                    ybarrier <= ybarrier + 2;
-                end if;
-            else
-                if (ybarrier = "000000000") then
-                    direction <= '0';
-                else
-                    ybarrier <= ybarrier - 2;
-                end if;
-            end if;
-        end if ;
+			if (direction = '0') then
+				if (ybarrier = "101111100") then
+					direction <= '1';
+				else
+					ybarrier <= ybarrier + 2;
+				end if;
+			else
+				if (ybarrier = "000000000") then
+					direction <= '0';
+				else
+					ybarrier <= ybarrier - 2;
+				end if;
+			end if;
+		end if ;
 	end process;
 -------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
