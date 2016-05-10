@@ -1,0 +1,41 @@
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2014.4/bin/unwrapped/lnx64.o/xelab -wto 7b85bb773fc14cd58ce181960524534c --debug typical --relax -L xil_defaultlib -L secureip --snapshot top_behav xil_defaultlib.top -log elaborate.log 
+Multi-threading is on. Using 6 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package xil_defaultlib.pong_pack
+Compiling architecture comportementale of entity xil_defaultlib.ClkDiv [clkdiv_default]
+Compiling architecture behavioral of entity xil_defaultlib.switch_mgr [switch_mgr_default]
+Compiling architecture behavioral of entity xil_defaultlib.button_mgr [button_mgr_default]
+Compiling architecture behavioral of entity xil_defaultlib.rotary [rotary_default]
+Compiling architecture comportementale of entity xil_defaultlib.Move [move_default]
+Compiling architecture behavioral of entity xil_defaultlib.ip_rotary [ip_rotary_default]
+Compiling architecture behavioral of entity xil_defaultlib.UARTcomponent [uartcomponent_default]
+Compiling architecture behavioral of entity xil_defaultlib.move_RS232 [move_rs232_default]
+Compiling architecture behavioral of entity xil_defaultlib.ip_uart [ip_uart_default]
+Compiling architecture behavioral of entity xil_defaultlib.decor [decor_default]
+Compiling architecture behavioral of entity xil_defaultlib.pad [pad_default]
+Compiling architecture behavioral of entity xil_defaultlib.bounce [bounce_default]
+Compiling architecture behavioral of entity xil_defaultlib.ball [ball_default]
+Compiling architecture behavioral of entity xil_defaultlib.brick_ctrl [brick_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.objects [objects_default]
+Compiling architecture behavioral of entity xil_defaultlib.display [display_default]
+Compiling architecture comportementale of entity xil_defaultlib.Tempo_pause [tempo_pause_default]
+Compiling architecture comportementale of entity xil_defaultlib.Timer_Lost [timer_lost_default]
+Compiling architecture comportementale of entity xil_defaultlib.MAE [mae_default]
+Compiling architecture behavioral of entity xil_defaultlib.mode [mode_default]
+Compiling architecture comportementale of entity xil_defaultlib.game_mgr [game_mgr_default]
+Compiling architecture behavioral of entity xil_defaultlib.master_slave_mgr [master_slave_mgr_default]
+Compiling architecture behavioral of entity xil_defaultlib.game [game_default]
+Compiling architecture archi of entity xil_defaultlib.VGA [vga_default]
+Compiling architecture behavioral of entity xil_defaultlib.top
+Built simulation snapshot top_behav

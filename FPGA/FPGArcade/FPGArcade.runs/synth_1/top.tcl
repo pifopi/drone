@@ -21,12 +21,12 @@ read_vhdl -library xil_defaultlib {
   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pong_package.vhd
   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/Timer_Lost.vhd
   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/Tempo_pause.vhd
+  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd
   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/mode.vhd
   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/game_mgr.vhd
   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/mas_sla_mgr.vhd
   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/move.vhd
   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/brick.vhd
-  /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd
   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/UARTcomponent.vhd
   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/display.vhd
   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pad.vhd

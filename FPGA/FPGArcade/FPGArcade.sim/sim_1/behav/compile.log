@@ -1,0 +1,52 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/MAE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MAE
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pong_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/Timer_Lost.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Timer_Lost
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/Tempo_pause.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Tempo_pause
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity decor
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/mode.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mode
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/game_mgr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity game_mgr
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/mas_sla_mgr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity master_slave_mgr
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/move.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Move
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/brick.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity brick_ctrl
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/UARTcomponent.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity UARTcomponent
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/display.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity display
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pad.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity pad
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ball.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ball
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/bounce.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity bounce
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/move_RS232.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity move_RS232
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/rotary.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rotary
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ClkDiv.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ClkDiv
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/button_mgr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity button_mgr
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ip_rotary.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ip_rotary
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ip_uart.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ip_uart
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/game.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity game
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/VGA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity VGA
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/objects.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity objects
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/switch_mgr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity switch_mgr
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top

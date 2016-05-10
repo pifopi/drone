@@ -40,8 +40,9 @@ end decor;
 architecture Behavioral of decor is
 
 signal xbarrier: std_logic;									-- Coordonnees en X de l'Obstacle
-signal ybarrier: std_logic_vector(8 downto 0);			-- Corrdonnees en Y de l'Obstacle
-signal direction: std_logic;									-- Sens de Deplacement de l'Obstacle
+signal ybarrier: std_logic_vector(8 downto 0) := "000000000";			-- Corrdonnees en Y de l'Obstacle
+signal direction: std_logic := '0';									-- Sens de Deplacement de l'Obstacle
+signal compteur : std_logic_vector(9 downto 0) := "0000000000"; 
 
 begin
 
@@ -116,17 +117,48 @@ begin
 
 		end if;
 	
+	--end process;
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+        -- AJOUTER ICI LE CODE POUR LA GESTION DE L'OBSTACLE
+        -- notre code -- 
+        if (xpos > 316) and (xpos < 324) then
+            xbarrier <= '1';
+        else
+            xbarrier <= '0';
+        end if;
+        
+        if (xbarrier = '1')
+            and  (ypos > ybarrier) and (ypos < ybarrier + 100)
+            and (game_type = '1')
+            and (obstacle = '1')
+            then
+                barrier	<= '1';
+            else 	
+                barrier	<= '0';	
+            end if;
 	end process;
 
--------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------
-
-	-- AJOUTER ICI LE CODE POUR LA GESTION DE L'OBSTACLE
-
-	xbarrier	<= '0';
-	ybarrier	<= (others => '0');
-	barrier	<= '0';
-
+	process (endFrame)
+	begin
+	   if (endFrame = '0' and endFrame'event) then
+            if (direction = '0') then
+                if (ybarrier = "101111100") then
+                    direction <= '1';
+                else
+                    ybarrier <= ybarrier + 2;
+                end if;
+            else
+                if (ybarrier = "000000000") then
+                    direction <= '0';
+                else
+                    ybarrier <= ybarrier - 2;
+                end if;
+            end if;
+        end if ;
+	end process;
 -------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
 

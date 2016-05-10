@@ -1,0 +1,27 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.sim/sim_1/synth/func/top_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ClkDiv
+INFO: [VRFC 10-311] analyzing module MAE
+INFO: [VRFC 10-311] analyzing module Move
+INFO: [VRFC 10-311] analyzing module Timer_Lost
+INFO: [VRFC 10-311] analyzing module UARTcomponent
+INFO: [VRFC 10-311] analyzing module VGA
+INFO: [VRFC 10-311] analyzing module ball
+INFO: [VRFC 10-311] analyzing module bounce
+INFO: [VRFC 10-311] analyzing module button_mgr
+INFO: [VRFC 10-311] analyzing module decor
+INFO: [VRFC 10-311] analyzing module game
+INFO: [VRFC 10-311] analyzing module game_mgr
+INFO: [VRFC 10-311] analyzing module ip_rotary
+INFO: [VRFC 10-311] analyzing module ip_uart
+INFO: [VRFC 10-311] analyzing module master_slave_mgr
+INFO: [VRFC 10-311] analyzing module mode
+INFO: [VRFC 10-311] analyzing module move_RS232
+INFO: [VRFC 10-311] analyzing module objects
+INFO: [VRFC 10-311] analyzing module pad
+INFO: [VRFC 10-311] analyzing module rotary
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.sim/sim_1/synth/func/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-1195] overwriting previous definition of module glbl [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.sim/sim_1/synth/func/glbl.v:6]

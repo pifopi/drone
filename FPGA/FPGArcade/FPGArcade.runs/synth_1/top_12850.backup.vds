@@ -1,0 +1,136 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue May 10 16:55:49 2016
+# Process ID: 12781
+# Log file: /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.runs/synth_1/top.vds
+# Journal file: /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source top.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7z020clg484-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.cache/wt [current_project]
+# set_property parent.project_path /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# set_property board_part em.avnet.com:zed:part0:1.2 [current_project]
+# read_vhdl -library xil_defaultlib {
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/MAE.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pong_package.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/Timer_Lost.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/Tempo_pause.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/mode.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/game_mgr.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/mas_sla_mgr.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/move.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/brick.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/UARTcomponent.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/display.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pad.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ball.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/bounce.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/move_RS232.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/rotary.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ClkDiv.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/button_mgr.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ip_rotary.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ip_uart.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/game.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/VGA.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/objects.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/switch_mgr.vhd
+#   /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/top.vhd
+# }
+# read_xdc /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.srcs/constrs_1/new/Constraint.xdc
+# set_property used_in_implementation false [get_files /nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/FPGArcade/FPGArcade.srcs/constrs_1/new/Constraint.xdc]
+# catch { write_hwdef -file top.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top top -part xc7z020clg484-1
+Command: synth_design -top top -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-1223] The version limit for your license is '2015.06' and will expire in -315 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 888.219 ; gain = 142.734 ; free physical = 2321 ; free virtual = 5056
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/top.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'ClkDiv' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ClkDiv.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'ClkDiv' (1#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ClkDiv.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'switch_mgr' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/switch_mgr.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'switch_mgr' (2#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/switch_mgr.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'button_mgr' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/button_mgr.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'button_mgr' (3#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/button_mgr.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'ip_rotary' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ip_rotary.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'rotary' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/rotary.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'rotary' (4#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/rotary.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'Move' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/move.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Move' (5#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/move.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'ip_rotary' (6#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ip_rotary.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'ip_uart' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ip_uart.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'UARTcomponent' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/UARTcomponent.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'UARTcomponent' (7#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/UARTcomponent.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'move_RS232' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/move_RS232.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'move_RS232' (8#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/move_RS232.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'ip_uart' (9#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ip_uart.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'objects' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/objects.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'decor' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:40]
+WARNING: [Synth 8-614] signal 'xbarrier' is read in the process but is not in the sensitivity list [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:55]
+WARNING: [Synth 8-614] signal 'ybarrier' is read in the process but is not in the sensitivity list [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:55]
+WARNING: [Synth 8-614] signal 'obstacle' is read in the process but is not in the sensitivity list [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:55]
+WARNING: [Synth 8-614] signal 'compteur' is read in the process but is not in the sensitivity list [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:148]
+WARNING: [Synth 8-614] signal 'direction' is read in the process but is not in the sensitivity list [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:148]
+WARNING: [Synth 8-614] signal 'ybarrier' is read in the process but is not in the sensitivity list [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:148]
+INFO: [Synth 8-256] done synthesizing module 'decor' (10#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'pad' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pad.vhd:46]
+WARNING: [Synth 8-614] signal 'longueur' is read in the process but is not in the sensitivity list [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pad.vhd:175]
+INFO: [Synth 8-256] done synthesizing module 'pad' (11#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pad.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'bounce' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/bounce.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'bounce' (12#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/bounce.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'ball' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ball.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'ball' (13#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ball.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'brick_ctrl' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/brick.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'brick_ctrl' (14#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/brick.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'objects' (15#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/objects.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'game' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/game.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'display' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/display.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'display' (16#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/display.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'mode' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/mode.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'Tempo_pause' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/Tempo_pause.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Tempo_pause' (17#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/Tempo_pause.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'Timer_Lost' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/Timer_Lost.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Timer_Lost' (18#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/Timer_Lost.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'MAE' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/MAE.vhd:24]
+WARNING: [Synth 8-614] signal 'precFrame' is read in the process but is not in the sensitivity list [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/MAE.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'MAE' (19#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/MAE.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'mode' (20#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/mode.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'game_mgr' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/game_mgr.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'game_mgr' (21#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/game_mgr.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'master_slave_mgr' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/mas_sla_mgr.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'master_slave_mgr' (22#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/mas_sla_mgr.vhd:18]
+WARNING: [Synth 8-3848] Net lost_game in module/entity game does not have driver. [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/game.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'game' (23#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/game.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'VGA' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/VGA.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (24#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/VGA.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'top' (25#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/top.vhd:29]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 929.453 ; gain = 183.969 ; free physical = 2278 ; free virtual = 5014
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 929.453 ; gain = 183.969 ; free physical = 2278 ; free virtual = 5014
+---------------------------------------------------------------------------------
