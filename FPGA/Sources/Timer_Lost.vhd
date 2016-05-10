@@ -34,7 +34,7 @@ BEGIN
 				Game_Lost <='0';
 
 			ELSIF Update_Timer_Lost = '1' THEN
-				Timer <= Timer- 1;
+				Timer <= Timer - 1;
 				
 			END IF;
 		END IF;

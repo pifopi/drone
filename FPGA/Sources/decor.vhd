@@ -42,7 +42,6 @@ architecture Behavioral of decor is
 signal xbarrier: std_logic;									-- Coordonnees en X de l'Obstacle
 signal ybarrier: std_logic_vector(8 downto 0) := "000000000";			-- Corrdonnees en Y de l'Obstacle
 signal direction: std_logic := '0';									-- Sens de Deplacement de l'Obstacle
-signal compteur : std_logic_vector(9 downto 0) := "0000000000"; 
 
 begin
 

@@ -61,7 +61,7 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-1223] The version limit for your license is '2015.06' and will expire in -315 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 888.219 ; gain = 142.734 ; free physical = 2291 ; free virtual = 5035
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 888.223 ; gain = 142.734 ; free physical = 2126 ; free virtual = 5032
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/top.vhd:29]
 INFO: [Synth 8-638] synthesizing module 'ClkDiv' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ClkDiv.vhd:14]
@@ -84,9 +84,9 @@ INFO: [Synth 8-256] done synthesizing module 'move_RS232' (8#1) [/nfs/home/sasl/
 INFO: [Synth 8-256] done synthesizing module 'ip_uart' (9#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/ip_uart.vhd:26]
 INFO: [Synth 8-638] synthesizing module 'objects' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/objects.vhd:51]
 INFO: [Synth 8-638] synthesizing module 'decor' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:40]
-WARNING: [Synth 8-614] signal 'xbarrier' is read in the process but is not in the sensitivity list [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:55]
-WARNING: [Synth 8-614] signal 'ybarrier' is read in the process but is not in the sensitivity list [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:55]
-WARNING: [Synth 8-614] signal 'obstacle' is read in the process but is not in the sensitivity list [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:55]
+WARNING: [Synth 8-614] signal 'xbarrier' is read in the process but is not in the sensitivity list [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:54]
+WARNING: [Synth 8-614] signal 'ybarrier' is read in the process but is not in the sensitivity list [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:54]
+WARNING: [Synth 8-614] signal 'obstacle' is read in the process but is not in the sensitivity list [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:54]
 INFO: [Synth 8-256] done synthesizing module 'decor' (10#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:40]
 INFO: [Synth 8-638] synthesizing module 'pad' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pad.vhd:46]
 WARNING: [Synth 8-614] signal 'longueur' is read in the process but is not in the sensitivity list [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pad.vhd:175]
@@ -120,7 +120,7 @@ INFO: [Synth 8-638] synthesizing module 'VGA' [/nfs/home/sasl/eleves/ei-se/34105
 INFO: [Synth 8-256] done synthesizing module 'VGA' (24#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/VGA.vhd:24]
 INFO: [Synth 8-256] done synthesizing module 'top' (25#1) [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/top.vhd:29]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 928.453 ; gain = 182.969 ; free physical = 2241 ; free virtual = 4994
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 928.457 ; gain = 182.969 ; free physical = 2082 ; free virtual = 4989
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -130,7 +130,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 928.453 ; gain = 182.969 ; free physical = 2240 ; free virtual = 4992
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 928.457 ; gain = 182.969 ; free physical = 2082 ; free virtual = 4989
 ---------------------------------------------------------------------------------
 Loading clock regions from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
 Loading clock buffers from /opt/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
@@ -149,30 +149,30 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1287.930 ; gain = 0.000 ; free physical = 1949 ; free virtual = 4701
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1287.934 ; gain = 0.000 ; free physical = 1787 ; free virtual = 4694
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1287.930 ; gain = 542.445 ; free physical = 1946 ; free virtual = 4699
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 1786 ; free virtual = 4694
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1287.930 ; gain = 542.445 ; free physical = 1946 ; free virtual = 4699
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 1786 ; free virtual = 4694
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1287.930 ; gain = 542.445 ; free physical = 1946 ; free virtual = 4699
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 1786 ; free virtual = 4694
 ---------------------------------------------------------------------------------
 ROM "qa" won't be mapped to Block RAM because address size (2) smaller than threshold (5) 
 ROM "qb" won't be mapped to Block RAM because address size (2) smaller than threshold (5) 
 INFO: [Synth 8-802] inferred FSM for state register 'etat_present_reg' in module 'Move'
 ROM "etat_prochain" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:134]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:134]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:134]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:133]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:133]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/decor.vhd:133]
 INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pad.vhd:205]
 INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pad.vhd:205]
 INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/pad.vhd:205]
@@ -199,7 +199,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_etat_prochai
 WARNING: [Synth 8-327] inferring latch for variable 'precFrame_reg' [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/MAE.vhd:122]
 WARNING: [Synth 8-3848] Net lost_game in module/entity game does not have driver. [/nfs/home/sasl/eleves/ei-se/3410586/drone/FPGA/Sources/game.vhd:57]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1287.930 ; gain = 542.445 ; free physical = 1945 ; free virtual = 4698
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 1786 ; free virtual = 4694
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -243,7 +243,7 @@ Detailed RTL Component Info :
 	   3 Input      9 Bit        Muxes := 2     
 	   2 Input      8 Bit        Muxes := 5     
 	   2 Input      7 Bit        Muxes := 3     
-	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 3     
 	   2 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 18    
 	   6 Input      4 Bit        Muxes := 4     
@@ -432,6 +432,7 @@ Detailed RTL Component Info :
 	                6 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
+	   2 Input      6 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 2     
 Module MAE 
 Detailed RTL Component Info : 
@@ -481,14 +482,14 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1287.930 ; gain = 542.445 ; free physical = 1945 ; free virtual = 4698
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 1786 ; free virtual = 4694
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1287.930 ; gain = 542.445 ; free physical = 1945 ; free virtual = 4698
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 1786 ; free virtual = 4694
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1287.930 ; gain = 542.445 ; free physical = 1945 ; free virtual = 4698
+Finished Parallel Reinference  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 1786 ; free virtual = 4694
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -532,19 +533,19 @@ WARNING: [Synth 8-3332] Sequential element (\game_ctrl/mmode/Temporisation_pause
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1287.930 ; gain = 542.445 ; free physical = 1944 ; free virtual = 4697
+Finished Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 1783 ; free virtual = 4690
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1287.930 ; gain = 542.445 ; free physical = 1944 ; free virtual = 4697
+Finished Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 1783 ; free virtual = 4690
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1287.930 ; gain = 542.445 ; free physical = 1944 ; free virtual = 4697
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 1783 ; free virtual = 4690
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1287.930 ; gain = 542.445 ; free physical = 1944 ; free virtual = 4697
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 1783 ; free virtual = 4690
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -552,10 +553,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1287.930 ; gain = 542.445 ; free physical = 1945 ; free virtual = 4696
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 1794 ; free virtual = 4690
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1287.930 ; gain = 542.445 ; free physical = 1945 ; free virtual = 4696
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 1794 ; free virtual = 4690
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -567,7 +568,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1287.930 ; gain = 542.445 ; free physical = 1928 ; free virtual = 4679
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 1778 ; free virtual = 4673
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -591,7 +592,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1287.930 ; gain = 542.445 ; free physical = 1928 ; free virtual = 4679
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 1778 ; free virtual = 4673
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -604,7 +605,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1287.930 ; gain = 542.445 ; free physical = 1928 ; free virtual = 4679
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 1778 ; free virtual = 4673
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -616,7 +617,7 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1287.930 ; gain = 542.445 ; free physical = 1928 ; free virtual = 4679
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 1778 ; free virtual = 4673
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
@@ -642,12 +643,12 @@ Report Cell Usage:
 |2     |CARRY4 |    77|
 |3     |INV    |     1|
 |4     |LUT1   |    71|
-|5     |LUT2   |   125|
-|6     |LUT3   |   132|
-|7     |LUT4   |   219|
-|8     |LUT5   |   131|
-|9     |LUT6   |   392|
-|10    |MUXF7  |    11|
+|5     |LUT2   |   128|
+|6     |LUT3   |   134|
+|7     |LUT4   |   220|
+|8     |LUT5   |   135|
+|9     |LUT6   |   390|
+|10    |MUXF7  |     6|
 |11    |FDCE   |   181|
 |12    |FDPE   |    59|
 |13    |FDRE   |    25|
@@ -661,34 +662,34 @@ Report Instance Areas:
 +------+------------------------+-----------------+------+
 |      |Instance                |Module           |Cells |
 +------+------------------------+-----------------+------+
-|1     |top                     |                 |  1462|
-|2     |  RS232                 |ip_uart          |   181|
-|3     |    RS232               |UARTcomponent    |   125|
-|4     |    direction           |move_RS232       |    56|
+|1     |top                     |                 |  1465|
+|2     |  RS232                 |ip_uart          |   183|
+|3     |    RS232               |UARTcomponent    |   126|
+|4     |    direction           |move_RS232       |    57|
 |5     |  buttons               |button_mgr       |    62|
-|6     |  clkgen                |ClkDiv           |    10|
+|6     |  clkgen                |ClkDiv           |    11|
 |7     |  codeur                |ip_rotary        |    29|
 |8     |    IP_Move             |Move             |    20|
 |9     |    codeur              |rotary           |     9|
-|10    |  game_ctrl             |game             |    55|
+|10    |  game_ctrl             |game             |    56|
 |11    |    game_manager        |game_mgr         |     8|
 |12    |    master_slave_select |master_slave_mgr |    10|
-|13    |    mmode               |mode             |    37|
+|13    |    mmode               |mode             |    38|
 |14    |      MAETAT            |MAE              |    21|
-|15    |      Timerr_Lost       |Timer_Lost       |    16|
+|15    |      Timerr_Lost       |Timer_Lost       |    17|
 |16    |  obj_ctrl              |objects          |   794|
 |17    |    ball_ctrl           |ball             |   484|
 |18    |    bounce_ctrl         |bounce           |    45|
 |19    |    fond_ecran          |decor            |    46|
 |20    |    pad_ctrl            |pad              |   219|
-|21    |  vga_ctrl              |VGA              |   299|
+|21    |  vga_ctrl              |VGA              |   298|
 +------+------------------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1287.930 ; gain = 542.445 ; free physical = 1928 ; free virtual = 4679
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 1778 ; free virtual = 4673
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1287.930 ; gain = 90.234 ; free physical = 1928 ; free virtual = 4679
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1287.930 ; gain = 542.445 ; free physical = 1928 ; free virtual = 4679
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1287.934 ; gain = 90.234 ; free physical = 1778 ; free virtual = 4673
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1287.934 ; gain = 542.445 ; free physical = 1778 ; free virtual = 4673
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 97 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -704,8 +705,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 75 Infos, 39 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1287.930 ; gain = 449.711 ; free physical = 1925 ; free virtual = 4677
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1287.934 ; gain = 449.711 ; free physical = 1774 ; free virtual = 4670
 # write_checkpoint -noxdef top.dcp
 # catch { report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb }
-report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.20 . Memory (MB): peak = 1287.930 ; gain = 0.000 ; free physical = 1923 ; free virtual = 4675
-INFO: [Common 17-206] Exiting Vivado at Tue May 10 17:11:26 2016...
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1287.934 ; gain = 0.000 ; free physical = 1774 ; free virtual = 4669
+INFO: [Common 17-206] Exiting Vivado at Tue May 10 17:31:24 2016...
