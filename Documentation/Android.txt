@@ -12,7 +12,7 @@ la permission d'accès au réseau.
 
 
 L'application utilise 4 boutons directionnels (haut, bas, droite et gauche) pour diriger le robot.
-Elle utilise 3 boutons (orientation, stabilisation et arret) pour définir l'action que l'utilisateur veut.
+Elle utilise 4 boutons (orientation, stabilisation, arret et demmarage) pour définir l'action que l'utilisateur veut.
 Il y a également un petit champ de texte permettant de vérifier quel est la chaine de caractere envoyée à la
 raspberry pi (grace à des paquets UDP). Enfin, l'adresse IP (10.100.7.4) est affichée et modifiable. Il suffit
 de saisir l'adresse IP à laquelle envoyer les données. Cette adresse IP est celle de la raspberry pi (10.100.7.4 dans notre cas)
