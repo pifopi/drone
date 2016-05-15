@@ -7,7 +7,7 @@ ENTITY ClkDiv IS
 	PORT (
 		Reset : IN STD_LOGIC := '1';
 		Clk100 : IN STD_LOGIC := '0';
-		Clk25 : OUT STD_LOGIC := '0' 
+		Clk25 : OUT STD_LOGIC := '0'
 	);
 END ClkDiv;
 

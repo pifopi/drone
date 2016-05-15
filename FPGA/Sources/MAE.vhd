@@ -119,15 +119,15 @@ BEGIN
 					RAZ_tempo_pause <= '0';
 					update_tempo_pause <= '1';
 					load_timer_lost <= '0';
-				    IF endframe = '1' AND precFrame = '0' THEN
-				        precFrame <= '1';
-				        update_timer_lost <= '1';
-				    ELSIF endFrame = '0' AND precFrame = '1' THEN
-				        precFrame <= '0';
-                        update_timer_lost <= '1';
-				    ELSE
-				        update_timer_lost <= '0';
-				    END IF;
+					IF endframe = '1' AND precFrame = '0' THEN
+						precFrame <= '1';
+						update_timer_lost <= '1';
+					ELSIF endFrame = '0' AND precFrame = '1' THEN
+						precFrame <= '0';
+						update_timer_lost <= '1';
+					ELSE
+						update_timer_lost <= '0';
+					END IF;
 					pause <= '1';
 					brick_win <= '0';
 					etat_prochain <= sept;

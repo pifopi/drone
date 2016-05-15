@@ -1,0 +1,70 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+""" On fait ici le test du pin 12 comme PWM  """
+""" On inclut time pour le sleep et RPi.GPIO pour le GPIO ! """
+
+
+import RPi.GPIO as GPIO
+import thread
+import signal
+import time
+import sys
+
+def signal_term_handler(signal, frame) :
+	print ("On nettoie avant de partir!")
+	GPIO.cleanup()
+	sys.exit(0)
+
+"""---------------------------PWM_Fun-------------------------"""
+"""Genere une PWM sur le pin argPin avec le duty_cycle argDuty"""
+
+def PWM_Fun (argPin , argDuty) :
+
+	GPIO.setmode(GPIO.BOARD)
+
+	duty_cycle = argDuty 
+	pin = argPin
+	frequence = 1000
+	GPIO.setup(pin,GPIO.OUT)
+	state = GPIO.gpio_function(pin)
+	print("On est dans l'etat {0} pour la pin {1} avec un DuCy de {2} !".format( state, pin, duty_cycle))
+
+	pwm1 = GPIO.PWM(pin , frequence)
+	pwm1.start (duty_cycle)
+
+	return pwm1
+
+"""---------------------------PWM_Upd-------------------------"""
+"""Met à jour la PWM en cours sur la pin argPin en passant le """
+"""duty_cycle à argDuty"
+
+"""---------------------------------------MAIN-----------------------------------------"""
+
+signal.signal(signal.SIGTERM , signal_term_handler)
+
+GPIO.setmode(GPIO.BOARD)
+
+list = [[12 , 50.0 , 0]]
+list = list + [[16 , 25.0 , 0]]
+
+#print ("Pin : {0}".format(list[0][0]))
+#print ("Duty_Cycle : {0}".format(list[0][1]))
+#print ("Init est à {0}".format(list[0][2]))
+
+#pwm = PWM_Fun(list[0][0] , list[0][1])
+
+try : 
+	while True :
+		for i in range(len(list)) :
+			print ("On est à {0}".format(i))
+			if list[i][2] == 0 :
+				pwm[i] = PWM_Fun(list[i][0] , list[i][1])
+				list[i][2] = 1 
+			if list[i][2] == 1 :
+				PWM_Upd(list[i][0] , list[i][1])
+			continue 
+
+except KeyboardInterrupt :
+	print("On nettoie avant de partir !")
+	GPIO.cleanup() 
