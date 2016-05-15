@@ -1,0 +1,5 @@
+- Il faut commencer par la lecture du fichier pdf Carte électronique avant de regarder le reste.
+
+- Dans le dossier Sources, vous trouverez tous les fichiers Altium pour le design du PCB.
+
+- Dans le dossier Tutoriels, vous trouverez des tutoriels pour une parfaite maîtrise d'Altium.
