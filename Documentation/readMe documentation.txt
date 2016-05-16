@@ -1,0 +1,2 @@
+Dans ce dossier, vous retrouverez les documentations dévellopeur et utilisateur. Ces deux documentations
+ont étés réalisées sous microsoft office donc nous fournissons une verion de lecture, exportée au format pdf

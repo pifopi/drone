@@ -1,0 +1,2 @@
+Dans ce dossier, vous troouverez tous nos GANTT, numérotés. Ils ont étés fait sous ganttproject donc
+il portent l'extension gan mais vous pouvez les consulter en png grâce à leur export sous ce format.

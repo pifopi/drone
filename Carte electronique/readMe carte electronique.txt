@@ -1,5 +1,7 @@
 Vous trouverez plus d'infos dans la documentation contenue dans le dossier "documentation"
-
+Dans le dossier Sources, vous trouverez tous les fichiers Altium pour le design du PCB.
+A la racine du projet, dans le dossier aide et tutoriels, vous trouverez des tutoriels
+pour une parfaite maîtrise d'Altium.
 
 Carte electronique réalisée sous altium designer pour éviter d'avoir de trop nombreux fils.
 
