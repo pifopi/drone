@@ -1,4 +1,4 @@
-Le fichier Appel à projet est le docuement que Clément FESTAL et moi-même (Gaël DOTTEL) avons
+Le fichier Appel à projet est le document que Clément FESTAL et moi-même (Gaël DOTTEL) avons
 du fournir à nos professeurs pour avoir le droit de réaliser ce projet au second semestre. Nous y
 exposions nos envies pour ce projet (qui ne correspond donc PAS à ce que nous avons réellement réalisé).
 En effet, suite à une disparition de drone, les engins volants ne sont pas très appréciés.

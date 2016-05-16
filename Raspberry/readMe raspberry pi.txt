@@ -3,7 +3,7 @@ Vous trouverez plus d'infos dans la documentation contenue dans le dossier "docu
 
 Les moteurs sont commandés par un fichier python (main.py)
 
-Le programme récupère la chaine de caractère envoyée deouis l'application android.
+Le programme récupère la chaine de caractère envoyée depuis l'application android.
 Cette chaine est comparée grâce au switch et nous adaptons donc la réponse du moteur
 selon la commande. Les premières lignes du fichier servent à fixer les pas de variation
 de chaque commande, ainsi que les valeurs maximales (obtenues précisément par des calibrages).

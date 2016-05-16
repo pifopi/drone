@@ -9,7 +9,7 @@ Les autre fichiers sont ceux utilisés projet. Cependant, seuls les fichiers :
 - SpiderDrone/app/src/main/java/fr/upmc/polytech/spiderdrone/Spider_Drone.java
 - SpiderDrone/app/src/main/res/layout/activity_spider_drone.xml
 - SpiderDrone/app/src/main/AndroidManifest.xml
-sont importants. Le premier est le code java, le deuxième correspond au ressources utilisées
+sont importants. Le premier est le code java, le deuxième correspond aux ressources utilisées
 par l'application (des boutons, etc) et le troisième sert simplement à demander au telephone
 la permission d'accès au réseau.
 
