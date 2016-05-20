@@ -48,15 +48,16 @@ signal.signal(signal.SIGTERM , signal_term_handler)
 GPIO.setmode(GPIO.BOARD)
 
 diviseur = 1.0
-PAS_HAUT = 0.2 / diviseur
-PAS_BAS = 0.2 / diviseur
+PAS_HAUT = 0.1 / diviseur
+PAS_BAS = 0.1 / diviseur
 PAS_AUCUN = 0.0 / diviseur
 MAX_BAS = 3.0
-MAX_HAUT = 10.0
+MAX_HAUT = 5.0
+MAX_BAS_ACTIF = 3.6
 
 PAS_GD = 0.3
-MAX_GAUCHE = 12.5
-MAX_DROITE = 2.5
+MAX_GAUCHE = 2.5
+MAX_DROITE = 12.5
 
 duty_init0 = (MAX_GAUCHE + MAX_DROITE) / 2.0
 duty_init1 = MAX_BAS
@@ -99,44 +100,47 @@ try : #					  ~   \ \    \   ~		~
 			list[1][1] = duty_init1
 			list[1][3] = 1
 			
-		elif data == "gauche" :
+		elif data == "droite" :
 			list[0][1] += PAS_GD
 			list[0][3] = 1
-			if list[0][1] > MAX_GAUCHE :
-				list[0][1] = MAX_GAUCHE
+			if list[0][1] > MAX_DROITE :
+				list[0][1] = MAX_DROITE
 				
-		elif data == "droite" :
+		elif data == "gauche" :
 			list[0][1] -= PAS_GD
 			list[0][3] = 1
-			if list[0][1] < MAX_DROITE :
-				list[0][1] = MAX_DROITE
+			if list[0][1] < MAX_GAUCHE :
+				list[0][1] = MAX_GAUCHE
 				
 		elif data == "haut" :
 			list[1][1] += PAS_HAUT
 			list[1][3] = 1
 			if list[1][1] > MAX_HAUT :
 				list[1][1] = MAX_HAUT
+			if list[1][1] < MAX_BAS_ACTIF :
+				list[1][1] = MAX_BAS_ACTIF
 				
 		elif data == "bas" :
 			list[1][1] -= PAS_BAS
 			list[1][3] = 1
-			if list[1][1] < MAX_BAS : 
-				list[1][1] = MAX_BAS
+			if list[1][1] < MAX_BAS_ACTIF : 
+				list[1][1] = MAX_BAS_ACTIF
 		
-		elif data == "stabilisation"
+		elif data == "stabilisation" :
 			print ("Notre robot ne peut pas encore se stabiliser au mur")
 		
-		elif data == "orientation"
+		elif data == "orientation" :
 			print ("Notre robot ne peut pas encore changer d'orientation")
 			
-		elif data == "demarrage"
-			# Voir avec clement comment faire ce cas la
+		elif data == "demarrage" :
+			list[1][1] = 3.2
+			list[1][3] = 1
 
-		for i in range(len(list)) :				"""Partie de traitement des données reçues ainsi que l'initialisation des PWM"""
-			if list[i][2] == 0 :				"""Initialisation"""
+		for i in range(len(list)) :								#Partie de traitement des données reçues ainsi que l'initialisation des pwm
+			if list[i][2] == 0 :								#si on doit initialiser
 				pwm.append(PWM_Fun(list[i][0] , list[i][1]))
 				list[i][2] = 1 
-			if (list[i][2] == 1) & (list[i][3] == 1) :	"""Changement a effectuer"""
+			if (list[i][2] == 1) & (list[i][3] == 1) :			#si on doit modifier l'ancienne valeur de pwm
 				pwm[i] = PWM_Upd(pwm[i],list[i][1])
 				print("PWM {0} prend le duty_cycle {1}".format(i , list[i][1]))
 				list[i][3] = 0 
