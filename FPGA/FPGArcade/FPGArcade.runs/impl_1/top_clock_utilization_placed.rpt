@@ -1,8 +1,8 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
-| Date         : Tue May 10 17:31:55 2016
-| Host         : pc4073 running 64-bit Linux Mint 17.1 Rebecca
+| Date         : Fri May 20 15:03:06 2016
+| Host         : pc4169 running 64-bit Linux Mint 17.1 Rebecca
 | Command      : report_clock_utilization -file top_clock_utilization_placed.rpt
 | Design       : top
 | Device       : xc7z020
@@ -46,10 +46,10 @@ Table of Contents
 +-------+-----------------------+------------------+------+-------+-------+---------------+-----------+
 | Index | BUFG Cell             | Net Name         | BELs | Sites | Fixed | MaxDelay (ns) | Skew (ns) |
 +-------+-----------------------+------------------+------+-------+-------+---------------+-----------+
-|     1 | clk100_IBUF_BUFG_inst | clk100_IBUF_BUFG |    5 |     1 |    no |         1.813 |     0.113 |
-|     2 | endframe_BUFG_inst    | endframe_BUFG    |   10 |     4 |    no |         1.964 |     0.156 |
-|     3 | RX_CLK_BUFG_inst      | RX_CLK_BUFG      |   34 |     9 |    no |         2.018 |     0.156 |
-|     4 | clk25_BUFG_inst       | clk25_BUFG       |  200 |   105 |    no |         2.038 |     0.310 |
+|     1 | clk100_IBUF_BUFG_inst | clk100_IBUF_BUFG |    5 |     1 |    no |         1.812 |     0.113 |
+|     2 | endframe_BUFG_inst    | endframe_BUFG    |   10 |     4 |    no |         1.919 |     0.113 |
+|     3 | RX_CLK_BUFG_inst      | RX_CLK_BUFG      |   34 |     8 |    no |         2.018 |     0.198 |
+|     4 | clk25_BUFG_inst       | clk25_BUFG       |  200 |   106 |    no |         2.021 |     0.355 |
 +-------+-----------------------+------------------+------+-------+-------+---------------+-----------+
 
 
@@ -70,9 +70,9 @@ Table of Contents
 +-------+----------------------------------------------------------------+--------------------------------------------------------------------+------+-------+-------+---------------+-----------+
 | Index | Local Clk Src                                                  | Net Name                                                           | BELs | Sites | Fixed | MaxDelay (ns) | Skew (ns) |
 +-------+----------------------------------------------------------------+--------------------------------------------------------------------+------+-------+-------+---------------+-----------+
-|     1 | game_ctrl/mmode/MAETAT/precFrame_reg_i_2                       | game_ctrl/mmode/MAETAT/Update_Timer_Lost                           |    1 |     1 |    no |         0.853 |     0.089 |
-|     2 | game_ctrl/mmode/MAETAT/FSM_sequential_etat_prochain_reg[2]_i_2 | game_ctrl/mmode/MAETAT/n_0_FSM_sequential_etat_prochain_reg[2]_i_2 |    3 |     1 |    no |         0.505 |     0.042 |
-|     3 | RS232/RS232/TX_BIT_TIME_reg[3]                                 | RS232/RS232/TX_CLK                                                 |   17 |     8 |    no |         0.983 |     0.291 |
+|     1 | game_ctrl/mmode/MAETAT/precFrame_reg_i_2                       | game_ctrl/mmode/MAETAT/Update_Timer_Lost                           |    1 |     1 |    no |         1.000 |     0.102 |
+|     2 | game_ctrl/mmode/MAETAT/FSM_sequential_etat_prochain_reg[2]_i_2 | game_ctrl/mmode/MAETAT/n_0_FSM_sequential_etat_prochain_reg[2]_i_2 |    3 |     1 |    no |         0.645 |     0.049 |
+|     3 | RS232/RS232/TX_BIT_TIME_reg[3]                                 | RS232/RS232/TX_CLK                                                 |   17 |     7 |    no |         1.281 |     0.552 |
 +-------+----------------------------------------------------------------+--------------------------------------------------------------------+------+-------+-------+---------------+-----------+
 
 
@@ -85,9 +85,9 @@ Table of Contents
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | X0Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 20000 |    0 |  4000 |    0 |    60 |    0 |    30 |    0 |    60 |
-| X1Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  121 | 25600 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X1Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   94 | 25600 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
 | X0Y1              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |  9600 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  151 | 20800 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X1Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  178 | 20800 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
 | X0Y2              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |  9600 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 20800 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
@@ -102,7 +102,7 @@ Table of Contents
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+------------------+
 | BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   5 |     0 |        0 | clk100_IBUF_BUFG |
 | BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  10 |     0 |        0 | endframe_BUFG    |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  99 |     0 |        0 | clk25_BUFG       |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  73 |     0 |        0 | clk25_BUFG       |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+------------------+
 
 
@@ -113,7 +113,7 @@ Table of Contents
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | Clock Net Name |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
 | BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  34 |     0 |        0 | RX_CLK_BUFG    |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 101 |     0 |        0 | clk25_BUFG     |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 127 |     0 |        0 | clk25_BUFG     |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
 
 
@@ -141,7 +141,7 @@ set_property LOC BUFGCTRL_X0Y2 [get_cells endframe_BUFG_inst]
 # Location of clock ports
 set_property LOC IOB_X0Y26 [get_ports clk100]
 
-# Clock net "RS232/RS232/TX_CLK" driven by instance "RS232/RS232/TX_BIT_TIME_reg[3]" located at site "SLICE_X110Y56"
+# Clock net "RS232/RS232/TX_CLK" driven by instance "RS232/RS232/TX_BIT_TIME_reg[3]" located at site "SLICE_X104Y59"
 #startgroup
 create_pblock CLKAG_RS232/RS232/TX_CLK
 add_cells_to_pblock [get_pblocks  CLKAG_RS232/RS232/TX_CLK] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="RS232/RS232/TX_CLK"}]]]
@@ -176,14 +176,14 @@ add_cells_to_pblock [get_pblocks  CLKAG_endframe_BUFG] [get_cells  -filter { IS_
 resize_pblock [get_pblocks CLKAG_endframe_BUFG] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
 #endgroup
 
-# Clock net "game_ctrl/mmode/MAETAT/Update_Timer_Lost" driven by instance "game_ctrl/mmode/MAETAT/precFrame_reg_i_2" located at site "SLICE_X95Y43"
+# Clock net "game_ctrl/mmode/MAETAT/Update_Timer_Lost" driven by instance "game_ctrl/mmode/MAETAT/precFrame_reg_i_2" located at site "SLICE_X98Y50"
 #startgroup
 create_pblock CLKAG_game_ctrl/mmode/MAETAT/Update_Timer_Lost
 add_cells_to_pblock [get_pblocks  CLKAG_game_ctrl/mmode/MAETAT/Update_Timer_Lost] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="game_ctrl/mmode/MAETAT/Update_Timer_Lost"}]]]
-resize_pblock [get_pblocks CLKAG_game_ctrl/mmode/MAETAT/Update_Timer_Lost] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+resize_pblock [get_pblocks CLKAG_game_ctrl/mmode/MAETAT/Update_Timer_Lost] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
 #endgroup
 
-# Clock net "game_ctrl/mmode/MAETAT/n_0_FSM_sequential_etat_prochain_reg[2]_i_2" driven by instance "game_ctrl/mmode/MAETAT/FSM_sequential_etat_prochain_reg[2]_i_2" located at site "SLICE_X95Y42"
+# Clock net "game_ctrl/mmode/MAETAT/n_0_FSM_sequential_etat_prochain_reg[2]_i_2" driven by instance "game_ctrl/mmode/MAETAT/FSM_sequential_etat_prochain_reg[2]_i_2" located at site "SLICE_X94Y46"
 #startgroup
 create_pblock CLKAG_game_ctrl/mmode/MAETAT/n_0_FSM_sequential_etat_prochain_reg[2]_i_2
 add_cells_to_pblock [get_pblocks  CLKAG_game_ctrl/mmode/MAETAT/n_0_FSM_sequential_etat_prochain_reg[2]_i_2] [get_cells  -filter { IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="game_ctrl/mmode/MAETAT/n_0_FSM_sequential_etat_prochain_reg[2]_i_2"}]]]
